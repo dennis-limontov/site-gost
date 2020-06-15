@@ -84,6 +84,12 @@ li.nav-item {
     vertical-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+    .info {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .info {
         display: none;
