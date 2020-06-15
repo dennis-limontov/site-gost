@@ -3,9 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const wordArray = [];
     let currentWord = 0;
 
-    const attr = "_this_is_attr";
-    [...words].forEach((word) => word.setAttribute(attr, ""));
-
     words[currentWord].style.opacity = "1";
     for (let i = 0; i < words.length; i++) {
         splitLetters(words[i]);
@@ -49,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         word.innerHTML = "";
         const letters = [];
 
-        const x = content.split(" - ");
+        const x = content.split(" — ");
         const s = x[0].split("").reduce((acc, l) => {
             if (l === " ") {
                 acc[acc.length - 1] += l;

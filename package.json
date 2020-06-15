@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start": "ng serve"
   },
   "private": true,
   "dependencies": {
