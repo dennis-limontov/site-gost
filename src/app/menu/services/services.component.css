@@ -1,0 +1,60 @@
+.services {
+    background-image: url(assets\img\services.jpg), url(assets\img\services-2.jpg);
+    background-position: left bottom, right center;
+    background-repeat: no-repeat, repeat;
+    -moz-background-size: 100%, 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%, 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%, 100%; /* Opera 9.6+ */
+    background-size: 100%, 100%;
+    min-height: 100vh;
+}
+
+.services-body {
+    background-color: #009236;
+    margin: 0 80px;
+    opacity: 0.95;
+}
+
+.services-caption {
+    background-color: black;
+    color: #009236;
+    padding: 20px 40px;
+}
+
+.services-space {
+    height: 50px;
+}
+
+.services-text {
+    padding: 20px 40px;
+}
+
+.services-undercaption {
+    margin-top: 20px;
+    font-size: 14pt;
+    line-height: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+    .services-body {
+        margin: 0 60px;
+    }
+
+    .services-space {
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services-body {
+        margin: 0;
+    }
+
+    .services-space {
+        height: 40px;
+    }
+
+    .services-text {
+        padding: 10px 20px;
+    }
+}

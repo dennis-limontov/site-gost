@@ -1,0 +1,78 @@
+<header>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-material-icons/0.7.1/angular-material-icons.min.js"></script>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <div class="logo">
+        <img src="..\assets\img\logo.png" />
+      </div>
+    </a>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/main">
+            Главная
+            <span class="sr-only">
+              (current)
+            </span>
+          </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link">Услуги</a>
+          <div class="list">
+            <a routerLink="/services">Спецработы</a>
+            <a routerLink="/services">Общестр. работы</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link">Товары</a>
+          <div class="list">
+            <a routerLink="/goods">Собственное производство</a>
+            <a routerLink="/goods">Неликвиды</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/portfolio">Портфолио</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/contacts">
+            Контакты
+          </a>
+        </li>
+        <li>
+          
+        </li>
+      </ul>
+      <div class="info">
+        <div>
+          <span class="material-icons">
+            call
+          </span>
+          <a href="tel: +375232233311">
+            8 0232 23-33-11 (телефон)
+          </a>
+        </div>
+        <div>
+          <p></p>
+        </div>
+        <div>
+          <span class="material-icons">
+            business
+          </span>
+          <span>
+            8 0232 20-85-63 (факс)
+          </span>
+        </div>
+      </div>
+      <!--<form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Поиск" aria-label="Поиск">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Поиск
+        </button>
+      </form>-->
+    </div>
+  </nav>
+</header>
+<router-outlet></router-outlet>

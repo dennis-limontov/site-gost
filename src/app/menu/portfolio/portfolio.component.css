@@ -1,0 +1,68 @@
+/* .faq-item {
+    padding: 0 30px 20px 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.4);
+    padding: 25px 30px 25px 83px;
+    cursor: pointer;
+    position: relative;
+} */
+
+.portfolio {
+    background-image: url(assets\img\portfolio.jpg);
+    background-size: cover;
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    min-height: 100vh;
+}
+
+.portfolio-body {
+    background-color: #009236;
+    margin: 0 80px;
+    opacity: 0.95;
+}
+
+.portfolio-caption {
+    background-color: black;
+    color: #009236;
+    padding: 20px 40px;
+}
+
+.portfolio-space {
+    height: 50px;
+}
+
+.portfolio-text {
+    height: 444px;
+    padding: 20px 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio-body {
+        margin: 0 60px;
+    }
+
+    .portfolio-space {
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-body {
+        margin: 0;
+    }
+
+    .portfolio-space {
+        height: 40px;
+    }
+
+    .portfolio-text {
+        padding: 10px 20px;
+    }
+}
