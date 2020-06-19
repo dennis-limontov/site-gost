@@ -85,6 +85,40 @@ a {
   bottom: 0;
 }
 
+.portfolio-gallery-text {
+  position: relative;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.portfolio-gallery span {
+  border-style: inset;
+  cursor: zoom-in;
+  position: absolute;
+  top: 25%;
+  left: 12.5%;
+  max-width: 24.5%;
+  max-height: 49.5%;
+}
+
+.portfolio-gallery-text {
+  position: absolute;
+  font-size: 25pt;
+}
+
+.portfolio-gallery-text span:nth-child(4n - 2) {
+  left: 37.5%;
+}
+.portfolio-gallery-text span:nth-child(4n - 1) {
+  left: 62.5%;
+}
+.portfolio-gallery-text span:nth-child(4n) {
+  left: 87.5%;
+}
+.portfolio-gallery-text span:nth-child(n + 5) {
+  top: 75%;
+}
+
 .portfolio-space {
   height: 50px;
 }
