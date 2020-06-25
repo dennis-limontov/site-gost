@@ -44,25 +44,56 @@
   margin: 0;
 }
 
-.carousel {
-  margin-bottom: 0 !important;
+.content-table {
+  padding: 10%;
 }
 
-.carousel-caption {
-  bottom: -100px !important;
-  color: white !important;
-  font-size: 16px !important;
-  line-height: 1.1;
+.main-img {
+  background: url(../../../assets/img/gost-main.jpg);
+  background-position: center center;
+  background-repeat: no-repeat; /* Фон не повторяется */
+  /* background-attachment: fixed; Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+  background-size: cover; /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+  min-height: 700px;
+}
+
+.main-img-text {
+  margin-right: auto;
+  text-align: end;
+}
+
+.main-img-text h1 {
+  color: white;
+  font-size: 6em;
+  font-weight: bold;
   text-shadow: 1px 1px 4px #009236;
 }
 
-.carousel-inner {
-  height: 100% !important;
+.main-img-text h2 {
+  color: #009236;
+  font-size: 2.8em;
+  text-shadow: 1px 1px 4px black;
 }
 
-.carousel-item.img {
-  height: 100% !important;
+.main-img-text-space {
+  height: 275px;
+}
+
+.main-video {
+  margin-top: -100px;
+  padding-right: 50px;
   width: 100%;
+  display: flex;
+  /* border: 1px solid red; */
+  position: absolute;
+  justify-content: flex-end;
+}
+
+.main-video video {
+  border: 3px solid green;
+  outline: 1px solid white;
+  width: 480px;
+  z-index: 3;
 }
 
 .undercaption {
@@ -91,7 +122,7 @@
 }
 
 /*Knopka Verx*/
-.upbtn {
+/* .upbtn {
   opacity: 0.7;
   z-index: 9999;
   width: 38px;
@@ -112,17 +143,63 @@
 .upbtn:hover {
   opacity: 1;
   background-color: #337ab7;
-}
+} */
 
 @media screen and (max-width: 1024px) {
   .about-us-all {
     padding: 80px;
+  }
+
+  .main-video {
+    margin-top: -75px;
+    padding-right: 25px;
+    width: 100%;
+  }
+
+  .main-video video {
+    width: 420px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .about-us-all {
     padding: 50px;
+  }
+
+  .main-img-text h1 {
+    font-size: 4.5em;
+  }
+
+  .main-img-text h2 {
+    font-size: 2.1em;
+  }
+
+  .main-video {
+    margin-top: -60px;
+    padding-right: 20px;
+  }
+
+  .main-video video {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .caption {
+    display: none;
+  }
+
+  .main-video {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .main-video video {
+    width: 368px;
+  }
+
+  .undercaption {
+    margin-top: 100px;
   }
 }
 
