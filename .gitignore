@@ -56,3 +56,6 @@ dist/
 
 # Ignore the test directory
 src/app/test/
+
+# Ignore the video directory
+src/assets/video/
