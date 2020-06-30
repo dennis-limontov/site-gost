@@ -48,52 +48,53 @@
   padding: 10%;
 }
 
-.main-img {
-  background: url(../../../assets/img/gost-main.jpg);
-  background-position: center center;
-  background-repeat: no-repeat; /* Фон не повторяется */
-  /* background-attachment: fixed; Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
-  background-size: cover; /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
-  min-height: 700px;
-}
-
-.main-img-text {
-  margin-right: auto;
-  text-align: end;
-}
-
-.main-img-text h1 {
-  color: white;
-  font-size: 6em;
-  font-weight: bold;
-  text-shadow: 1px 1px 4px #009236;
-}
-
-.main-img-text h2 {
-  color: #009236;
-  font-size: 2.8em;
-  text-shadow: 1px 1px 4px black;
-}
-
 .main-img-text-space {
   height: 275px;
 }
 
 .main-video {
-  margin-top: -100px;
-  padding-right: 50px;
-  width: 100%;
-  display: flex;
-  /* border: 1px solid red; */
-  position: absolute;
-  justify-content: flex-end;
+  padding: 10% 0;
+  background-color: #d5f3b3;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-video-text {
+  font-size: 70px;
+  text-align: end;
+  padding-right: 5%;
+  padding-top: 15%;
+  position: relative;
+  opacity: 1;
+}
+
+.main-video-text h1 {
+  color: white;
+  font-size: 1.15em;
+  font-weight: bold;
+  margin-right: auto;
+  text-align: end;
+  text-shadow: 1px 1px 4px #009236;
+}
+
+.main-video-text h2 {
+  color: #009236;
+  font-size: 0.7em;
+  text-shadow: 1px 1px 4px black;
 }
 
 .main-video video {
-  border: 3px solid green;
-  outline: 1px solid white;
-  width: 480px;
-  z-index: 3;
+  min-height: auto;
+  min-width: 100%;
+  height: auto;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  left: 50%;
+  top: 50%;
+  z-index: 0;
+  position: absolute;
 }
 
 .undercaption {
@@ -149,16 +150,6 @@
   .about-us-all {
     padding: 80px;
   }
-
-  .main-video {
-    margin-top: -75px;
-    padding-right: 25px;
-    width: 100%;
-  }
-
-  .main-video video {
-    width: 420px;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -173,29 +164,11 @@
   .main-img-text h2 {
     font-size: 2.1em;
   }
-
-  .main-video {
-    margin-top: -60px;
-    padding-right: 20px;
-  }
-
-  .main-video video {
-    width: 350px;
-  }
 }
 
 @media screen and (max-width: 640px) {
   .caption {
     display: none;
-  }
-
-  .main-video {
-    justify-content: center;
-    padding-right: 0;
-  }
-
-  .main-video video {
-    width: 368px;
   }
 
   .undercaption {
@@ -206,5 +179,19 @@
 @media screen and (max-width: 480px) {
   .about-us-all {
     padding: 25px;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #trailer > video {
+    left: -100%;
+    width: 300%;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #trailer > video {
+    height: 300%;
+    top: -100%;
   }
 }
