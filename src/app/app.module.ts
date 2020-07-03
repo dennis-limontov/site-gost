@@ -5,7 +5,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { AppComponent } from "./app.component";
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
-import { MainPageComponent } from "./menu/main-page/main-page.component";
+import { MainPageComponent } from "./main-page/main-page.component";
 import { ContactsComponent } from "./menu/contacts/contacts.component";
 import { GoodsComponent } from "./menu/goods/goods.component";
 import { ServicesComponent } from "./menu/services/services.component";
@@ -49,6 +49,10 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
+  ],
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -59,8 +63,7 @@ const appRoutes: Routes = [
     ServicesComponent,
     PortfolioComponent,
   ],
-  imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [ AppComponent ],
 })
 export class AppModule {}

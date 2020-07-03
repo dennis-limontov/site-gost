@@ -51,9 +51,6 @@ node_modules/
 logs
 *.log
 
-# Ignore the build directory
-dist/
-
 # Ignore the test directory
 src/app/test/
 
