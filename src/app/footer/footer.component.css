@@ -1,56 +1,73 @@
-.footer {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    justify-content: space-between;
+.company {
+    padding-left: 130px;
 }
 
-.footer-email {
-    color: white;
+.contacts {
+    line-height: 2;
 }
 
-.footer-email:hover {
+.footer-copyright {
+    background-color: #16181a;
+    color: gray;
+}
+
+.footer-copyright:hover {
+    color: #009236;
+}
+
+.links {
+    line-height: 1;
+}
+
+.mr-3 {
+    max-width: 13px!important;
+}
+
+.mx-auto a, .mx-auto p {
+    color: #d5f3b3;
+}
+
+.mx-auto a:hover, .mx-auto p:hover {
     -webkit-filter: drop-shadow(3px 5px 5px black);
     color: white;
     filter: drop-shadow(3px 5px 5px black);
     text-decoration: none;
 }
 
-.footer-first {
-    color: #31e974;
-    font-size: 20px;
-    margin-left: 20px;
+.nav-link {
+    padding: 0.5rem 0;
 }
 
-.footer-first:hover {
-    color: white;
-    text-decoration: none;
+.underline {
+    max-height: 0;
 }
 
-.footer-last {
-    color: white;
-    margin-right: 20px;
+footer h6 {
+    color: gray;
 }
 
-.footer-last:hover {
-    color: #31e974;
+hr {
+    border-top: 1px solid #009236;
+    width: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+    .company {
+        padding-left: 80px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .company {
+        padding-left: 25px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .footer-email {
-        color: #31e974;
-    }
-    
-    .footer-first {
-        display: none;
-    }
-
-    .footer-last {
-        margin-right: 5px;
+    .company {
+        padding-left: 0;
     }
 }
 
 @media screen and (max-width: 480px) {
-    
 }
