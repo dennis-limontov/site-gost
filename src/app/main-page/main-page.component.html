@@ -2,14 +2,8 @@
 <script src="jquery.auto-text-rotating.js"></script>
 
 <main role="main">
-  <section class="main-video">
-    <!-- <video autoplay loop="true" muted>
-      <source
-        src="../../../assets/video/gost-main-2.mp4"
-        type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
-      />
-    </video> -->
-    <ul class="cb-slideshow">
+  <section class="main-view">
+    <ul class="main-slideshow">
       <li><span>Image 01</span><div></div></li>
       <li><span>Image 02</span><div></div></li>
       <li><span>Image 03</span><div></div></li>
@@ -18,7 +12,7 @@
       <li><span>Image 06</span><div></div></li>
     </ul>
 
-    <div class="main-video-text">
+    <div class="main-view-text">
       <h1>СТРОИМ С УМОМ!</h1>
       <h2>ОАО "Гомельский объединённый<br>
         строительный трест"</h2>
@@ -98,12 +92,38 @@
     </div>
   </div>
 
-  <!-- <section class="main-video">
-    <video autoplay loop="true" muted>
+  <div class="main-video">
+    <div>ВИДЕОИНФОРМАЦИЯ</div>
+    <div class="main-video-line"></div>
+    <video controls poster="../../assets/video/gost-main-poster.jpg">
+      <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
       <source
         src="../../../assets/video/gost-main-2.mp4"
         type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
       />
+
+      <!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
+      <source
+        src="../../../assets/video/gost-main-2.webm"
+        type="video/webm"
+      >
+      
+      <!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera -->
+      <source
+        src="../../../assets/video/gost-main-2.ogv"
+        type="video/ogg"
+      >
+
+      <!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
+      <object
+        data="../../../assets/video/gost-main-2.swf"
+        type="application/x-shockwave-flash"
+      >
+        <param
+          name="movie"
+          value="../../../assets/video/gost-main-2.swf"
+        >
+      </object>
     </video>
-  </section> -->
+  </div>
 </main>
