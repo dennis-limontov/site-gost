@@ -1,4 +1,8 @@
-<header>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
+
+<header ng-app="anchorScrollExample">
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
       <div class="logo">
@@ -18,9 +22,9 @@
         </li>
         <li class="nav-item active">
           <a class="nav-link">Услуги</a>
-          <div class="list">
+          <div class="list" ng-controller="MainCtrl">
             <a routerLink="/services">Спецработы</a>
-            <a routerLink="/services">Общестр. работы</a>
+            <a ng-click="scrollTo('OR')" routerLink="/services">Общестр. работы</a>
           </div>
         </li>
         <li class="nav-item active">
