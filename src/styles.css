@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import '~material-design-icons/iconfont/material-icons.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -9,7 +9,7 @@
 body {
   background-color: #009236;
   color: #5a5a5a;
-  font: 13.2px/20px SangBleuSunrise, sans-serif;
+  /* font: 13.2px/20px SangBleuSunrise, sans-serif; */
   min-height: calc(100vh - 599px);
 }
 

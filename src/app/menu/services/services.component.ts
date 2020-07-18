@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import "./goto.js";
 
 @Component({
@@ -6,20 +6,10 @@ import "./goto.js";
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.css']
 })
-export class ServicesComponent implements OnInit, AfterViewInit {
-  @ViewChild('services_or') serv;
-
+export class ServicesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
-
-  ngAfterViewInit() {
-    this.focus();
-  }
-
-  focus() {
-    // this.serv.nativeElement.scrollIntoView();
   }
 
 }
