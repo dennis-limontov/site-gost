@@ -49,6 +49,15 @@
   margin: 0;
 }
 
+.slider {
+  font-size: 30pt;
+  text-align-last: center;
+}
+
+.slider a {
+  padding-right: 50px;
+}
+
 .content-table {
   padding: 10%;
 }
@@ -203,31 +212,31 @@
  }
 
  .main-slideshow li:nth-child(1) span {
-  background-image: url(../../assets/img/houses/residential/house-001.jpg
+  background-image: url(../../assets/img/houses/residential/house-res-001.jpg
   );
  }
  .main-slideshow li:nth-child(2) span {
-  background-image: url(../../assets/img/houses/residential/house-002.jpg
+  background-image: url(../../assets/img/houses/residential/house-res-002.jpg
   );
   animation-delay: 6s;
  }
  .main-slideshow li:nth-child(3) span {
-  background-image: url(../../assets/img/houses/residential/house-003.jpg
+  background-image: url(../../assets/img/houses/residential/house-res-003.jpg
   );
   animation-delay: 12s;
  }
  .main-slideshow li:nth-child(4) span {
-  background-image: url(../../assets/img/houses/residential/house-004.jpg
+  background-image: url(../../assets/img/houses/residential/house-res-004.jpg
   );
   animation-delay: 18s;
  }
  .main-slideshow li:nth-child(5) span {
-  background-image: url(../../assets/img/houses/residential/house-005.jpg
+  background-image: url(../../assets/img/houses/residential/house-res-005.jpg
   );
   animation-delay: 24s;
  }
  .main-slideshow li:nth-child(6) span {
-  background-image: url(../../assets/img/houses/residential/house-006.jpg
+  background-image: url(../../assets/img/houses/residential/house-res-006.jpg
   );
   animation-delay: 30s;
  }
