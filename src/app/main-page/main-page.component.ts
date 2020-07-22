@@ -13,71 +13,220 @@ export class MainPageComponent implements OnInit {
   constructor() {}
 
   cards = [
+    // residential
     {
-      title: 'Card Title 1',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Ветка',
+      description: 'Жилой дом, 30 квартир',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-001.jpg'
     },
     {
-      title: 'Card Title 2',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Житковичи',
+      description: 'Жилой дом, 40 квартир',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-002.jpg'
     },
     {
-      title: 'Card Title 3',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Калинковичи',
+      description: 'Жилой дом, 45 квартир',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-003.jpg'
     },
     {
-      title: 'Card Title 4',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Киров',
+      description: 'Общежитие',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-004.jpg'
     },
     {
-      title: 'Card Title 5',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Петриков',
+      description: 'Жилой дом',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-005.jpg'
     },
     {
-      title: 'Card Title 6',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Ровковичи',
+      description: 'Одноквартирные жилые дома',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-006.jpg'
     },
     {
-      title: 'Card Title 7',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Чечерск',
+      description: 'Жилой дом, 40 квартир',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-007.jpg'
     },
     {
-      title: 'Card Title 8',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Житковичи',
+      description: 'Жилой дом, 60 квартир, 10-й мкр-н',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-008.jpg'
     },
     {
-      title: 'Card Title 9',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Житковичи',
+      description: 'Жилой дом, 40 квартир, мкр-н Озёрный',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-009.jpg'
     },
     {
-      title: 'Card Title 10',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Ветка',
+      description: 'Жилой дом, 60 квартир',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-010.jpg'
     },
     {
-      title: 'Card Title 11',
-      description: 'Some quick example text to build on the card title and make up the bulk of the card content',
-      buttonText: 'Button',
+      title: 'Ветка',
+      description: 'Жилой дом',
+      buttonText: 'Увеличить',
       img: '../../../assets/img/houses/residential/house-res-011.jpg'
+    },
+    {
+      title: 'Петриков',
+      description: 'Жилой дом',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/residential/house-res-012.JPG'
+    },
+
+    // agricultural
+    {
+      title: 'Житковичи',
+      description: 'Котельная',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/agricultural/house-agr-001.jpg'
+    },
+    {
+      title: 'Добрушский р-н',
+      description: 'Котельные',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/agricultural/house-agr-002.jpg'
+    },
+    {
+      title: 'Гомель',
+      description: 'Завод "Кристалл"',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/agricultural/house-agr-003.jpg'
+    },
+    {
+      title: 'МТФ',
+      description: 'МТФ',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/agricultural/house-agr-004.jpg'
+    },
+    {
+      title: 'МТФ',
+      description: 'МТФ',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/agricultural/house-agr-005.png'
+    },
+    {
+      title: 'Песочная Буда',
+      description: 'Птицефабрика "Рассвет"',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/agricultural/house-agr-006.png'
+    },
+    {
+      title: 'Ровковичи',
+      description: 'Свиноводческий комплекс',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/agricultural/house-agr-007.jpg'
+    },
+    {
+      title: 'Хальч',
+      description: 'ОАО "Хальч"',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/agricultural/house-agr-008.jpg'
+    },
+    
+    // social
+    {
+      title: 'Ветка',
+      description: 'Бассейн',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-001.jpg'
+    },
+    {
+      title: 'Житковичи',
+      description: 'Больница',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-002.jpg'
+    },
+    {
+      title: 'Житковичи',
+      description: 'Гостиница "Четверть Века"',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-003.jpg'
+    },
+    {
+      title: 'Добруш',
+      description: '',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-004.jpg'
+    },
+    {
+      title: 'Петриков',
+      description: 'Дом культуры',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-005.jpg'
+    },
+    {
+      title: 'Радуга',
+      description: 'ГУО "Радужский детский сад"',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-006.jpg'
+    },
+    {
+      title: 'Чечерск',
+      description: 'Прокуратура',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-007.jpg'
+    },
+    {
+      title: 'Районная ЦРБ',
+      description: 'Районная ЦРБ',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-008.jpg'
+    },
+    {
+      title: 'Ветка',
+      description: 'Детский сад',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-009.JPG'
+    },
+    {
+      title: 'Чечерск',
+      description: 'СОК "Бриз"',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-010.jpg'
+    },
+    {
+      title: 'Петриковский р-н',
+      description: 'Средняя школа',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-011.jpg'
+    },
+    {
+      title: 'Ветка',
+      description: 'ФОК',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-012.jpg'
+    },
+    {
+      title: 'Житковичи',
+      description: 'ФОК',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-013.jpg'
+    },
+    {
+      title: 'Радуга',
+      description: 'Средняя школа',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-014.jpg'
+    },
+    {
+      title: 'Залесье',
+      description: 'Средняя школа',
+      buttonText: 'Увеличить',
+      img: '../../../assets/img/houses/social/house-soc-015.jpg'
     }
   ];
   slides: any = [[]];

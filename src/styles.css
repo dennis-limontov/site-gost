@@ -13,6 +13,47 @@ body {
   min-height: calc(100vh - 599px);
 }
 
+/* MDB CAROUSEL
+-------------------------------------------------- */
+
+body .btn-primary {
+  background-color: #009236!important;
+}
+
+.card img {
+  border-bottom: 3px solid #009236;
+}
+
+.carousel-indicators {
+  background-color: #16181a;
+  margin-bottom: 8px;
+}
+
+.carousel-inner {
+  padding: 0 15px 15px 15px;
+}
+
+.controls-top {
+  font-size: 30pt;
+  text-align: center;
+}
+.controls-top:hover {
+  color: green;
+}
+.controls-top a {
+  margin: 0 25px;
+}
+
+.carousel-multi-item {
+  background-color: #16181a;
+  min-height: 540px;
+}
+
+.img-fluid {
+  height: 250px;
+  width: auto;
+}
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 

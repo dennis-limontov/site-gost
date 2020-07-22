@@ -162,6 +162,18 @@
   background-color: #337ab7;
 } */
 
+.main-gallery {
+  background-color: #16181a;
+}
+
+.main-gallery-text {
+  color: white;
+  font-size: 40pt;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+}
+
 .main-slideshow,
 .main-slideshow:after {
  width: 100%;
