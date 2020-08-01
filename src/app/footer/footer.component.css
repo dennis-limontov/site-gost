@@ -65,6 +65,7 @@ hr {
 
 @media screen and (max-width: 768px) {
     .company {
+        padding-bottom: 20px;
         padding-left: 0;
     }
 

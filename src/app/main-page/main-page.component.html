@@ -1,4 +1,4 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="jquery.auto-text-rotating.js"></script>
 
 <main role="main">
@@ -19,41 +19,15 @@
     </div>
   </section>
 
-  <div class="border-main bg-dark">
-    <div class="border-main-block">
-      <div class="border-main-text">
-        <div class="text-1">
-          НАША МИССИЯ — |СТРАТЕГИЧЕСКИЕ ЗАДАЧИ — |КОНКУРЕНТОСПОСОБНОСТЬ —
-          |ЭФФЕКТИВНОСТЬ — |ИННОВАЦИИ —
-        </div>
-        <div class="text-2">
-          возвести строительную отрасль на качественно новый уровень и стать
-          ведущей строительной компанией в Республике Беларусь и за рубежом,
-          показывая пример стабильности, качества выполнения строительных работ
-          и обслуживания заказчиков. |стратегия ОАО «Гомельский объединенный
-          строительный трест» состоит в достижении и сохранении ведущих позиций
-          по всем направлениям своей деятельности. Залог успешной работы и
-          стабильности организации мы видим в постоянном наращивании опыта в
-          сочетании с инновационным подходом к производственным вопросам.
-          |приоритетная задача компании – обеспечение долгосрочной
-          конкурентоспособности. Именно поэтому в развитии организации немалое
-          место отводится соблюдению стандартов работы, гарантиям взятых
-          обязательств и уровню корпоративной ответственности. |мы понимаем
-          важность эффективной работы для процветания организации. Мы тратим
-          много усилий для своевременных расчётов, снижения издержек и разумного
-          использования кадрового потенциала. Поэтому нам удаётся предлагать
-          нашим заказчикам и партнёрам обоюдовыгодные условия работы.
-          |организация нацелена на постоянное обновление и модернизацию, готова
-          вкладывать средства в обучение сотрудников и освоение новых
-          технологий.
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="about-us-all">
     <div class="about-us-back">
-      <div class="about-us">
+      <div class="col-md-5 col-lg-5 about-logo">
+        <div class="logo">
+          <img src="../../assets/img/logo-orig.png" />
+        </div>
+      </div>
+
+      <div class="col-md-7 col-lg-7 about-us row">
         <div class="caption">
           <h1>
             <b>О НАС</b>
@@ -92,29 +66,82 @@
     </div>
   </div>
 
+  <div class="border-main">
+    <div class="main-slogan main-slogan-white">НАШИ ПРЕИМУЩЕСТВА</div>
+    <div class="main-line"></div>
+    <div class="border-main-block">
+      <div class="border-main-text">
+        <div class="text-1">
+          1. НАША МИССИЯ|2. СТРАТЕГИЧЕСКИЕ ЗАДАЧИ|3. КОНКУРЕНТОСПОСОБНОСТЬ|
+          4. ЭФФЕКТИВНОСТЬ|5. ИННОВАЦИИ
+        </div>
+        <div class="text-2">
+          возвести строительную отрасль на качественно новый уровень и стать
+          ведущей строительной компанией в Республике Беларусь и за рубежом,
+          показывая пример стабильности, качества выполнения строительных работ
+          и обслуживания заказчиков. |стратегия ОАО «Гомельский объединенный
+          строительный трест» состоит в достижении и сохранении ведущих позиций
+          по всем направлениям своей деятельности. Залог успешной работы и
+          стабильности организации мы видим в постоянном наращивании опыта в
+          сочетании с инновационным подходом к производственным вопросам.
+          |приоритетная задача компании – обеспечение долгосрочной
+          конкурентоспособности. Именно поэтому в развитии организации немалое
+          место отводится соблюдению стандартов работы, гарантиям взятых
+          обязательств и уровню корпоративной ответственности. |мы понимаем
+          важность эффективной работы для процветания организации. Мы тратим
+          много усилий для своевременных расчётов, снижения издержек и разумного
+          использования кадрового потенциала. Поэтому нам удаётся предлагать
+          нашим заказчикам и партнёрам обоюдовыгодные условия работы.
+          |организация нацелена на постоянное обновление и модернизацию, готова
+          вкладывать средства в обучение сотрудников и освоение новых
+          технологий.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-gallery">
+    <div class="main-slogan main-slogan-dark">НАШИ ОБЪЕКТЫ</div>
+    <div class="main-line main-line-dark"></div>
+    <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+                [animation]="'slide'">
+      <mdb-carousel-item *ngFor="let item of slides; let i = index">
+        <div class="col-md-4 col-sm-6 col-xs-6" *ngFor="let card of item; let cardIndex = index">
+          <mdb-card class="my-1">
+            <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+            <mdb-card-body>
+              <mdb-card-title>
+                <h4>{{card.title}}</h4>
+              </mdb-card-title>
+              <p>{{card.description}}</p>
+              <!-- <a href="#" mdbBtn color="primary" class="waves-light" mdbWavesEffect>{{card.buttonText}}</a> -->
+            </mdb-card-body>
+          </mdb-card>
+        </div>
+      </mdb-carousel-item>
+    </mdb-carousel>
+  </div>
+
   <div class="main-video">
-    <div>ВИДЕОИНФОРМАЦИЯ</div>
-    <div class="main-video-line"></div>
+    <div class="main-slogan main-slogan-white">ВИДЕОИНФОРМАЦИЯ</div>
+    <div class="main-line"></div>
     <video controls poster="../../assets/video/gost-main-poster.jpg">
       <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
       <source
         src="../../../assets/video/gost-main-2.mp4"
         type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
       />
-
       <!-- WebM/VP8 для Firefox4, Opera, и Chrome -->
       <source
         src="../../../assets/video/gost-main-2.webm"
         type="video/webm"
       >
-      
       <!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera -->
       <source
         src="../../../assets/video/gost-main-2.ogv"
         type="video/ogg"
       >
-
-      <!-- добавляем видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
+      <!-- видеоконтент для устаревших браузеров, в которых нет поддержки элемента video -->
       <object
         data="../../../assets/video/gost-main-2.swf"
         type="application/x-shockwave-flash"
@@ -125,35 +152,5 @@
         >
       </object>
     </video>
-
-    <div class="pdf">
-      <a href="../../assets/pdf/audit-2019.PDF">
-        Аудиторское заключение 2019 </a
-      >
-    </div>
-
-
-  </div>
-
-  <div class="main-gallery">
-    <div class="main-gallery-text">НАШИ ОБЪЕКТЫ</div>
-    <div class="main-video-line"></div>
-    <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
-                [animation]="'slide'">
-    <mdb-carousel-item *ngFor="let item of slides; let i = index">
-      <div class="col-md-4" *ngFor="let card of item; let cardIndex = index">
-        <mdb-card class="my-1">
-          <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
-          <mdb-card-body>
-            <mdb-card-title>
-              <h4>{{card.title}}</h4>
-            </mdb-card-title>
-            <p>{{card.description}}</p>
-            <a href="#" mdbBtn color="primary" class="waves-light" mdbWavesEffect>{{card.buttonText}}</a>
-          </mdb-card-body>
-        </mdb-card>
-      </div>
-    </mdb-carousel-item>
-  </mdb-carousel>
   </div>
 </main>

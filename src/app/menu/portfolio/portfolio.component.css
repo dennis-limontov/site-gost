@@ -22,7 +22,7 @@ a {
 .portfolio-body {
   background-color: #009236;
   margin: 0 80px;
-  opacity: 0.95;
+  opacity: 1;
 }
 
 .portfolio-caption {
@@ -66,7 +66,7 @@ a {
 
 .portfolio-gallery img:focus {
   border-style: outset;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   z-index: 1;
@@ -78,7 +78,7 @@ a {
 .portfolio-gallery img:focus ~ div {
   background: #d5f3b3;
   cursor: zoom-out;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;

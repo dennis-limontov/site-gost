@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, HostListener } from "@angular/core";
 
 import toggleElem from "./animation.js";
 import buttonUp from "./button-up.js";
@@ -11,6 +11,8 @@ import rt from "./rotating-text.js";
 })
 export class MainPageComponent implements OnInit {
   constructor() {}
+
+  width;
 
   cards = [
     // residential
@@ -238,11 +240,24 @@ export class MainPageComponent implements OnInit {
     return R;
   }
 
-  ngOnInit() {
+  defineCards() {
+    this.width = window.innerWidth;
     this.slides = this.chunk(this.cards, 3);
+    if (this.width <= 768) {
+      this.slides = this.chunk(this.cards, 2);
+    }
+  }
+
+  ngOnInit() {
+    this.defineCards();
 
     toggleElem();
     buttonUp();
     rt();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.defineCards();
   }
 }

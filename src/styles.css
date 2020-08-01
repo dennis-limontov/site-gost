@@ -2,6 +2,15 @@
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+/* Colors:
+
+#d5f3b3 green-white
+#03cc1e green-bright
+#009236 green
+#343a40 dark-gray
+
+*/
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -25,12 +34,20 @@ body .btn-primary {
 }
 
 .carousel-indicators {
-  background-color: #16181a;
-  margin-bottom: 8px;
+  margin-bottom: 50px; /*18px*/
+}
+
+.carousel-indicators li {
+  background-color: black;
+  border: 1px solid white;
 }
 
 .carousel-inner {
-  padding: 0 15px 15px 15px;
+  padding: 0 75px 15px 75px;
+}
+
+.carousel {
+  background-color: white!important;
 }
 
 .controls-top {
@@ -58,12 +75,12 @@ body .btn-primary {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.marketing h2 {
+  font-weight: 400;
+}
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
 }
 .marketing .col-lg-4 p {
   margin-right: .75rem;
@@ -103,5 +120,23 @@ body .btn-primary {
 @media (min-width: 62em) {
   .featurette-heading {
     margin-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .carousel-inner {
+    padding: 0 60px 15px 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-inner {
+    padding: 0 30px 15px 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-inner {
+    padding: 0 20px 15px 20px;
   }
 }

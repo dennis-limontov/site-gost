@@ -1,3 +1,8 @@
+.about-logo {
+  align-self: center;
+  text-align: center;
+}
+
 .about-us {
   padding: 15px;
 }
@@ -13,26 +18,25 @@
 }
 
 .about-us-all {
-  background-image: url(assets\img\gost-main-2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 100px;
+  background-color: white;
+  padding: 30px;
 }
 
 .about-us-back {
-  background-color: #009236;
-  opacity: 0.9;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .border-main {
+  background: url("../../assets/img/gost-main-3.jpg") no-repeat;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%;
   color: white;
-  padding: 30px 0;
 }
 
 .border-main-block {
-  border-left: 5px solid #d5f3b3;
   position: relative;
   margin: 0 auto;
   min-height: 300px;
@@ -49,23 +53,168 @@
   margin: 0;
 }
 
-.slider {
-  font-size: 30pt;
-  text-align-last: center;
-}
-
-.slider a {
-  padding-right: 50px;
-}
-
 .content-table {
   padding: 10%;
 }
 
+.main-gallery {
+  background-color: white;
+  /* background-color: #16181a; */
+}
+
+.main-gallery-text {
+  color: white;
+}
+
+.main-line {
+  border-top: 1px solid #d5f3b3;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  position: relative;
+  width: 200px;
+}
+
+.main-line-dark {
+  border-top: 1px solid #16181a;
+}
+
+.main-slideshow,
+.main-slideshow:after {
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  list-style: none;
+  opacity: 0.8;
+  top: 0px;
+  z-index: 0;
+}
+.main-slideshow:after {
+  content: '';
+  /* background: transparent url(../../assets/img/portfolio.jpg) repeat top left; */
+}
+
+.main-slideshow li div {
+  z-index: 1000;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  animation: titleAnimation 36s linear infinite 0s;
+}
+
+.main-slideshow li div h3 {
+  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+  font-size: 240px;
+  padding: 0;
+  line-height: 200px;
+}
+
+.main-slideshow li span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: transparent;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 36s linear infinite 0s;
+}
+
+.main-slideshow li:nth-child(2) div {
+  animation-delay: 6s;
+}
+.main-slideshow li:nth-child(3) div {
+  animation-delay: 12s;
+}
+.main-slideshow li:nth-child(4) div {
+  animation-delay: 18s;
+}
+.main-slideshow li:nth-child(5) div {
+  animation-delay: 24s;
+}
+.main-slideshow li:nth-child(6) div {
+  animation-delay: 30s;
+}
+
+.main-slideshow li:nth-child(1) span {
+  background-attachment: fixed;
+  background-image: url(../../assets/img/houses/social/house-soc-007.jpg
+  );
+}
+.main-slideshow li:nth-child(2) span {
+  animation-delay: 6s;
+  background-attachment: fixed;
+  background-image: url(../../assets/img/houses/residential/house-res-008.jpg
+  );
+}
+.main-slideshow li:nth-child(3) span {
+  animation-delay: 12s;
+  background-attachment: fixed;
+  background-image: url(../../assets/img/houses/agricultural/house-agr-003.jpg
+  );
+}
+.main-slideshow li:nth-child(4) span {
+  animation-delay: 18s;
+  background-attachment: fixed;
+  background-image: url(../../assets/img/houses/social/house-soc-001.jpg
+  );
+}
+.main-slideshow li:nth-child(5) span {
+  animation-delay: 24s;
+  background-attachment: fixed;
+  background-image: url(../../assets/img/houses/residential/house-res-005.jpg
+  );
+}
+.main-slideshow li:nth-child(6) span {
+  animation-delay: 30s;
+  background-attachment: fixed;
+  background-image: url(../../assets/img/houses/social/house-soc-012.jpg
+  );
+}
+
+.main-slogan {
+  font-size: 40pt;
+  font-weight: 700;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main-slogan-dark {
+  color: #16181a;
+}
+
+.main-slogan-white {
+  color: white;
+}
+
+.main-video {
+  background: url("../../assets/img/gost-main-4.jpg");
+  -moz-background-size: 160%; /* Firefox 3.6+ */
+  -webkit-background-size: 160%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 160%; /* Opera 9.6+ */
+  background-size: 160%;
+  color: #16181a;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.main-video video {
+  border: 3px solid black;
+  height: auto;
+  outline: none;
+  margin-top: 20px;
+}
+
 .main-view {
   padding: 10% 0;
-  background-color: #d5f3b3;
-  color: #fff;
+  background-color: white;
   overflow: hidden;
   position: relative;
 }
@@ -93,17 +242,21 @@
   text-shadow: 1px 1px 4px black;
 }
 
-.main-view video {
-  min-height: auto;
-  min-width: 100%;
-  height: auto;
-  width: 100%;
-  transform: translate(-50%, -50%);
-  opacity: 0.5;
-  left: 50%;
-  top: 50%;
-  z-index: 0;
-  position: absolute;
+.pdf a {
+  color: white;
+  font-size: 14pt;
+}
+.pdf a:hover {
+  color: #d5f3b3;
+}
+
+.slider {
+  font-size: 30pt;
+  text-align-last: center;
+}
+
+.slider a {
+  padding-right: 50px;
 }
 
 .text-1 {
@@ -118,7 +271,7 @@
 }
 
 .undercaption {
-  color: white;
+  color: black;
 }
 
 .w-100 {
@@ -162,170 +315,56 @@
   background-color: #337ab7;
 } */
 
-.main-gallery {
-  background-color: #16181a;
-}
-
-.main-gallery-text {
-  color: white;
-  font-size: 40pt;
-  font-weight: 700;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.main-slideshow,
-.main-slideshow:after {
- width: 100%;
- height: 100%;
- left: 0px;
- list-style: none;
- opacity: 0.8;
- top: 0px;
- z-index: 0;
-}
-.main-slideshow:after {
- content: '';
- /* background: transparent url(../../assets/img/portfolio.jpg) repeat top left; */
-}
-
-.main-slideshow li div {
-  z-index: 1000;
-  position: absolute;
-  bottom: 30px;
-  left: 0px;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  color: #fff;
-  animation: titleAnimation 36s linear infinite 0s;
- }
-
- .main-slideshow li div h3 {
-  font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-  font-size: 240px;
-  padding: 0;
-  line-height: 200px;
- }
-
- .main-slideshow li span {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  color: transparent;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: none;
-  opacity: 0;
-  z-index: 0;
-  animation: imageAnimation 36s linear infinite 0s;
- }
-
- .main-slideshow li:nth-child(1) span {
-  background-image: url(../../assets/img/houses/residential/house-res-001.jpg
-  );
- }
- .main-slideshow li:nth-child(2) span {
-  background-image: url(../../assets/img/houses/residential/house-res-002.jpg
-  );
-  animation-delay: 6s;
- }
- .main-slideshow li:nth-child(3) span {
-  background-image: url(../../assets/img/houses/residential/house-res-003.jpg
-  );
-  animation-delay: 12s;
- }
- .main-slideshow li:nth-child(4) span {
-  background-image: url(../../assets/img/houses/residential/house-res-004.jpg
-  );
-  animation-delay: 18s;
- }
- .main-slideshow li:nth-child(5) span {
-  background-image: url(../../assets/img/houses/residential/house-res-005.jpg
-  );
-  animation-delay: 24s;
- }
- .main-slideshow li:nth-child(6) span {
-  background-image: url(../../assets/img/houses/residential/house-res-006.jpg
-  );
-  animation-delay: 30s;
- }
-
- .main-slideshow li:nth-child(2) div {
-  animation-delay: 6s;
- }
- .main-slideshow li:nth-child(3) div {
-  animation-delay: 12s;
- }
- .main-slideshow li:nth-child(4) div {
-  animation-delay: 18s;
- }
- .main-slideshow li:nth-child(5) div {
-  animation-delay: 24s;
- }
- .main-slideshow li:nth-child(6) div {
-  animation-delay: 30s;
- }
-
- .main-video {
-   background-color: grey;
-   color: #16181a;
-   padding-bottom: 30px;
-   text-align: center;
- }
-
- .main-video div {
-   font-size: 40pt;
-   font-weight: 700;
-   padding: 20px 0;
- }
-
- .main-video video {
-   height: auto;
-   outline: none;
-   padding-top: 20px;
- }
-
- .main-video-line {
-   border-top: 1px solid #d5f3b3;
-   margin: 0 auto;
-   padding-bottom: 20px;
-   position: relative;
-   width: 200px;
- }
-
- .pdf a {
-   color: white;
-   font-size: 14pt;
- }
- .pdf a:hover {
-   color: #d5f3b3;
- }
-
- @keyframes imageAnimation {
+@keyframes imageAnimation {
   0% { opacity: 0; animation-timing-function: ease-in; }
   8% { opacity: 1; animation-timing-function: ease-out; }
   17% { opacity: 1; }
   25% { opacity: 0; }
   100% { opacity: 0; }
- }
- @keyframes titleAnimation {
+}
+@keyframes titleAnimation {
   0% { opacity: 0; }
   8% { opacity: 1; }
   17% { opacity: 1; }
   19% { opacity: 0; }
   100% { opacity: 0; }
- }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-slogan {
+    font-size: 36pt;
+  }
+
+  p {
+    font-size: 10pt;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .about-us-all {
-    padding: 80px;
+    padding: 20px;
   }
 
   .border-main-text {
     margin-left: 40px;
+    padding-top: 10px;
+  }
+
+  .logo img {
+    float: left;
+    width: 80%;
+  }
+
+  .main-slogan {
+    font-size: 32pt;
+  }
+
+  .main-view-text h1 {
+    font-size: 0.8em;
+  }
+  
+  .main-view-text h2 {
+    font-size: 0.5em;
   }
 
   .main-video video {
@@ -342,12 +381,44 @@
 }
 
 @media screen and (max-width: 768px) {
+  .about-us {
+    margin: 0 20px 10px 20px;
+  }
+
   .about-us-all {
-    padding: 50px;
+    padding: 10px;
+  }
+
+  .border-main {
+    -moz-background-size: 130%; /* Firefox 3.6+ */
+    -webkit-background-size: 130%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 130%; /* Opera 9.6+ */
+    background-size: 130%;
   }
 
   .border-main-text {
     margin-left: 30px;
+  }
+
+  .logo img {
+    float: none;
+    width: auto;
+  }
+
+  .main-slogan {
+    font-size: 28pt;
+  }
+
+  .main-view-text {
+    padding: 20% 10% 0 0;
+  }
+
+  .main-view-text h1 {
+    font-size: 0.8em;
+  }
+  
+  .main-view-text h2 {
+    font-size: 0.45em;
   }
 
   .main-video div {
@@ -355,7 +426,7 @@
   }
 
   .main-video video {
-    padding-top: 10px;
+    margin-top: 10px;
   }
 
   .main-video-line {
@@ -372,6 +443,30 @@
 }
 
 @media screen and (max-width: 640px) {
+  .border-main {
+    -moz-background-size: 165%; /* Firefox 3.6+ */
+    -webkit-background-size: 165%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 165%; /* Opera 9.6+ */
+    background-size: 165%;
+    height: 460px;
+  }
+
+  .border-main-text {
+    padding-top: 20px;
+  }
+
+  .main-slogan {
+    font-size: 24pt;
+  }
+
+  .main-view-text h1 {
+    font-size: 0.6em;
+  }
+  
+  .main-view-text h2 {
+    font-size: 0.35em;
+  }
+
   .main-video div {
     font-size: 25pt;
   }
@@ -382,10 +477,6 @@
 
   .text-2 {
     font-size: 1.15em;
-  }
-
-  .undercaption {
-    margin-top: 100px;
   }
 }
 
