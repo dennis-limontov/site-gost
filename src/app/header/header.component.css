@@ -2,6 +2,7 @@
 
 .header-first {
     background-color: white;
+    z-index: 3;
 }
 
 .logo:hover {
@@ -39,13 +40,14 @@
 .header-second {
     background-color: white;
     font-size: 0.9rem;
+    z-index: 3;
 }
 
 .list {
     background-color: #343a40;
     color: white;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    font-size: 11pt;
+    font-size: 0.9rem;
     /* max-width: -webkit-fill-available; */
     position: absolute;
     display: none;
@@ -66,11 +68,11 @@
 }
 
 .list-goods {
-    margin: 0px 0 0 -75px;
+    margin: 0px 0 0 -70px;
 }
 
 .list-services {
-    margin: 0px 0 0 -45px;
+    margin: 0px 0 0 -40px;
 }
 
 .nav-item {
@@ -84,6 +86,16 @@
     color: white;
 }
 
+.RBSticky {
+    position: fixed;
+    height: auto !important;
+    top: 0;
+    z-index: 4;
+    border-top: 0;
+    margin-top: 0;
+    width: 100%;
+}
+
 @media screen and (max-width: 1024px) {
     .nav-item {
         padding: 0 40px;
@@ -95,6 +107,16 @@
         display: none;
     }
 
+    .navbar {
+        flex-wrap: inherit!important;
+    }
+
+    .nav-item {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
     .list {
         position: absolute;
     }
@@ -115,14 +137,6 @@
     .list-services {
         right: 100px;
         top: 45px;
-    }
-
-    .navbar {
-        flex-wrap: inherit!important;
-    }
-
-    .nav-item {
-        padding: 0 15px;
     }
 }
 
