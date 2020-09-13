@@ -108,7 +108,7 @@
       <mdb-carousel-item *ngFor="let item of slides; let i = index">
         <div class="col-md-4 col-sm-6 col-xs-6" *ngFor="let card of item; let cardIndex = index">
           <mdb-card class="my-1">
-            <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+            <mdb-card-img [src]="card.img" alt="Card image cap" [class]="minimized" class="minimized"></mdb-card-img>
             <mdb-card-body>
               <mdb-card-title>
                 <h4>{{card.title}}</h4>

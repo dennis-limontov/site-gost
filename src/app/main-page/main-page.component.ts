@@ -3,6 +3,7 @@ import { Component, OnInit, HostListener } from "@angular/core";
 import toggleElem from "./animation.js";
 import buttonUp from "./button-up.js";
 import rt from "./rotating-text.js";
+import mp from "./magnified-pictures.js";
 
 @Component({
   selector: "app-main-page",
@@ -26,7 +27,8 @@ export class MainPageComponent implements OnInit {
       title: 'Житковичи',
       description: 'Жилой дом, 40 квартир',
       buttonText: 'Увеличить',
-      img: '../../../assets/img/houses/residential/house-res-002.jpg'
+      img: '../../../assets/img/houses/residential/house-res-002.jpg',
+      class: 'minimized'
     },
     {
       title: 'Калинковичи',
@@ -254,6 +256,7 @@ export class MainPageComponent implements OnInit {
     toggleElem();
     buttonUp();
     rt();
+    mp();
   }
 
   @HostListener('window:resize', ['$event'])
