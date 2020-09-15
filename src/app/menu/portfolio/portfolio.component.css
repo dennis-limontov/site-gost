@@ -1,14 +1,22 @@
-/* .container {
-  text-align: center;
-}
-img {
-  margin: 1px;
-  width: 225px;
-  height: 225px;
-}
-a {
+.gallery a {
+  line-height: 1.7em;
   text-decoration: none;
-} */
+}
+.gallery img {
+  border: 2px solid white;
+}
+
+.gallery-text-first {
+  color: white;
+  font-size: 12pt;
+  margin-top: 5px;
+}
+
+.gallery-text-second {
+  color: white;
+  font-size: 10pt;
+  margin-top: -10px;
+}
 
 .portfolio {
   background-image: url(assets\img\portfolio.jpg);
@@ -31,94 +39,6 @@ a {
   padding: 20px 40px;
 }
 
-.portfolio-gallery {
-  position: relative;
-  padding-top: 50%;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-.portfolio-gallery img {
-  border-style: inset;
-  cursor: zoom-in;
-  position: absolute;
-  top: 25%;
-  left: 12.5%;
-  max-width: 24.5%;
-  max-height: 49.5%;
-  -webkit-transform: translate(-50%, -50%);
-  transition: 0.2s;
-  transform: translate(-50%, -50%);
-}
-
-.portfolio-gallery img:nth-child(4n - 2) {
-  left: 37.5%;
-}
-.portfolio-gallery img:nth-child(4n - 1) {
-  left: 62.5%;
-}
-.portfolio-gallery img:nth-child(4n) {
-  left: 87.5%;
-}
-.portfolio-gallery img:nth-child(n + 5) {
-  top: 75%;
-}
-
-.portfolio-gallery img:focus {
-  border-style: outset;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  max-width: 100%;
-  max-height: 100%;
-  outline: none;
-  pointer-events: none;
-}
-.portfolio-gallery img:focus ~ div {
-  background: #d5f3b3;
-  cursor: zoom-out;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.portfolio-gallery-text {
-  position: relative;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-.portfolio-gallery span {
-  border-style: inset;
-  cursor: zoom-in;
-  position: absolute;
-  top: 25%;
-  left: 12.5%;
-  max-width: 24.5%;
-  max-height: 49.5%;
-}
-
-.portfolio-gallery-text {
-  position: absolute;
-  font-size: 25pt;
-}
-
-.portfolio-gallery-text span:nth-child(4n - 2) {
-  left: 37.5%;
-}
-.portfolio-gallery-text span:nth-child(4n - 1) {
-  left: 62.5%;
-}
-.portfolio-gallery-text span:nth-child(4n) {
-  left: 87.5%;
-}
-.portfolio-gallery-text span:nth-child(n + 5) {
-  top: 75%;
-}
-
 .portfolio-space {
   height: 50px;
 }
@@ -135,6 +55,70 @@ a {
   color: white;
   font-size: 20pt;
   line-height: 2em;
+}
+
+/* Gallery */
+
+.gallery {
+  width: 90%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+  
+.gallery ul li {
+  list-style:none;
+  float: left;
+  font: 10px/1.5 Verdana, Helvetica, Sans-serif;
+  width: 16%;
+  margin: 2% 2% 10px 2%;
+}
+  
+.gallery ul li a {
+  color: #5d5f5d;
+}
+  
+.gallery ul li a img {
+  max-width: 100%;
+}
+  
+  /* 100% - (5 * 4%) = 80% */
+  /* 80%/5 = 16% */
+  
+  /* 100% - (4 * 4%) = 84% */
+  /* 80%/4 = 21% */
+  
+  /* Media Queries */
+@media only screen and (max-width: 940px), only screen and (max-device-width: 940px) {
+  .gallery ul li {
+    width: 21%;
+  }
+}
+  
+  /* 100% - (3 * 4%) = 88% */
+  /* 88%/3 = 29.33333% */
+  
+@media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+  .gallery ul li {
+    width: 29.33333%
+  }
+}
+  
+  /* 100% - (2 * 4%) = 92% */
+  /* 92%/2 = 46% */
+  
+@media only screen and (max-width: 530px), only screen and (max-device-width: 530px) {
+  .gallery ul li {
+    width: 46%
+  }
+}
+  
+  /* 100% - 4% = 96% */
+  /* 96% */
+  
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
+  .gallery ul li {
+    width: 96%
+  }
 }
 
 @media screen and (max-width: 1024px) {

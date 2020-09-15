@@ -24,14 +24,15 @@
           <a class="nav-link" routerLink="/main">Главная</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link">Услуги</a>
+          <a class="nav-link" routerLink="/services">Услуги</a>
           <div class="list list-services" ng-controller="MainCtrl">
-            <a routerLink="/services">Спецработы</a>
+            <a ng-click="scrollTo('SR')" routerLink="/services">Спецработы</a>
             <a ng-click="scrollTo('OR')" routerLink="/services">Общестр. работы</a>
+            <a ng-click="scrollTo('CE')" routerLink="/services">Сертификаты</a>
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link">Товары</a>
+          <a class="nav-link" routerLink="/goods">Товары</a>
           <div class="list list-goods">
             <a routerLink="/goods">Собственное производство</a>
             <a routerLink="/goods">Неликвиды</a>

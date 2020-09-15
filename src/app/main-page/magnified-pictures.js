@@ -5,7 +5,7 @@ export default function() {
     $('.minimized').click(function(event) {
       // var i_path = $(this).attr('src');
       var i_path = $(this).children()[0].currentSrc.replace($(this).children()[0].baseURI, "");
-      var i_text = "some_text";
+      var i_text = ""; // "some_text";
       console.log(i_path);
       
       $('body').append('<div id="overlay"></div><div id="magnify"><img src="'+i_path+'"><div id="magnify_text">'+i_text+'</div><div id="close-popup"><i></i></div></div>');

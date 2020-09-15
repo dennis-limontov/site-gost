@@ -1,3 +1,8 @@
+.certificates {
+    line-height: 2.5em!important;
+    margin: 30px 10px;
+}
+
 .services {
     background-image: url(assets\img\services.jpg), url(assets\img\services-2.jpg);
     background-position: left bottom, right center;
@@ -34,6 +39,10 @@
     margin-top: 20px;
     font-size: 14pt;
     line-height: 2em;
+}
+.services-undercaption a{
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {
