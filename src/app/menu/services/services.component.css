@@ -1,29 +1,36 @@
 .certificates {
     line-height: 2.5em!important;
-    margin: 30px 10px;
+    margin: 30px 10px 30px -10px;
+}
+.certificates a {
+    color: black!important;
+}
+.certificates ul {
+    list-style: none;
+}
+.certificates ul li:before {
+    content: "\140A";
+    margin: 0 1.35em;
+}
+
+.certificates-text {
+    color: black;
+    margin: -10px 0 0 -20px;
 }
 
 .services {
-    background-image: url(assets\img\services.jpg), url(assets\img\services-2.jpg);
-    background-position: left bottom, right center;
-    background-repeat: no-repeat, repeat;
-    -moz-background-size: 100%, 100%; /* Firefox 3.6+ */
-    -webkit-background-size: 100%, 100%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 100%, 100%; /* Opera 9.6+ */
-    background-size: 100%, 100%;
+    background-color: white;
     min-height: 100vh;
 }
 
 .services-body {
-    background-color: #009236;
     margin: 0 80px;
     opacity: 0.95;
 }
 
 .services-caption {
-    background-color: black;
-    color: #009236;
-    padding: 20px 40px;
+    text-align: center;
+    padding: 40px;
 }
 
 .services-space {
@@ -32,17 +39,19 @@
 
 .services-text {
     color: black;
-    padding: 20px 40px;
+    padding: 0px 40px;
 }
 
 .services-undercaption {
-    margin-top: 20px;
     font-size: 14pt;
     line-height: 2em;
 }
-.services-undercaption a{
+.services-undercaption a {
     color: white;
     text-decoration: none;
+}
+.services-undercaption ul li {
+    padding-left: 15px;
 }
 
 @media screen and (max-width: 1024px) {

@@ -62,10 +62,6 @@
   /* background-color: #16181a; */
 }
 
-.main-gallery-text {
-  color: white;
-}
-
 .main-line {
   border-top: 1px solid #d5f3b3;
   margin: 0 auto;
@@ -76,6 +72,36 @@
 
 .main-line-dark {
   border-top: 1px solid #16181a;
+}
+
+.main-news {
+  background-color: white;
+}
+
+.main-news-doc {
+  line-height: 0.3;
+  margin: 5px 10px 20px 10px;
+  text-align: center;
+  width: 160px;
+}
+.main-news-doc a {
+  color: #009236;
+}
+
+.main-news-inner:hover {
+  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+  height: 145px;
+  margin: 5px;
+  width: 175px;
+}
+
+.main-news-some {
+  padding: 20px 50px 40px 50px;
+}
+.main-news-some img {
+  margin: 10px 10px 10px 50px;
+  width: 80px;
 }
 
 .main-slideshow,
