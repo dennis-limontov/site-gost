@@ -17,10 +17,12 @@ export default function () {
     ymaps.load().then((maps) => {
       maps.ready(() => {
         coordinates.forEach((value, key) => {
-          new maps.Map(`yMap-${key}`, {
+          const placemark = new maps.Placemark(value);
+          const map = new maps.Map(`yMap-${key}`, {
             center: value,
             zoom: 17,
           });
+          map.geoObjects.add(placemark);
         });
       });
     });
