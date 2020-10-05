@@ -9,8 +9,307 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <body>
+  <table>
+    <tr>
+      <td class="buttons">
+        <button on-click="showCurrentContact($event)">ОАО "ГОСТ"</button>
+        <button on-click="showCurrentContact($event)">ПМК-4 ОАО "ГОСТ"</button>
+        <button on-click="showCurrentContact($event)">ПМК-5 ОАО "ГОСТ"</button>
+        <button on-click="showCurrentContact($event)">ПМК-16 ОАО "ГОСТ"</button>
+        <button on-click="showCurrentContact($event)">ПМК-43 ОАО "ГОСТ"</button>
+        <button on-click="showCurrentContact($event)">ПМК-76 ОАО "ГОСТ"</button>
+        <button on-click="showCurrentContact($event)">УП ЖСК ОАО "ГОСТ"</button>
+      </td>
+
+      <td>
+        <table>
+          <!-- gost -->
+          <tr class="contact">
+            <td class="contact-info">
+              <div class="info">Контакты</div>
+              <br />
+              <div class="info-text">
+                8 0232 233311
+                <i class="fa fa-phone mr-3"></i>
+              </div>
+              <div class="info-text">
+                gost@gost.gomel.by
+                <i class="fas fa-at"></i>
+              </div>
+              <br />
+
+              <div class="info">Реквизиты</div>
+              <br />
+              <div>
+                УНП 400022439<br />
+                246028, Гомельская обл.,<br />
+                г. Гомель, ул. Советская, д. 126
+              </div>
+              <br />
+
+              <div class="info">Время работы</div>
+              <br />
+              <div>
+                пн-пт: 8:00 – 17:00<br />
+                обед: 12:00 – 13:00<br />
+                сб-вс: выходной
+              </div>
+
+              <!-- <details>
+                <summary>Полный список контактов</summary>
+                <div></div>
+              </details> -->
+            </td>
+            <td>
+              <div class="map">
+                <div class="yMap" id="yMap-gost">Карта 1</div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- pmk-4 -->
+          <tr class="contact hidden">
+            <td class="contact-info">
+              <div class="info">Контакты</div>
+              <br />
+              <div class="info-text">
+                8 02350 21079
+                <i class="fa fa-phone mr-3"></i><br />
+                (02350) 20934 (201)
+                <i class="fa fa-fax" aria-hidden="true"></i><br />
+                (02350) 21079 (202)
+                <i class="fa fa-fax" aria-hidden="true"></i>
+              </div>
+              <div class="info-text">
+                pmk4@gost.gomel.by
+                <i class="fas fa-at"></i>
+              </div>
+              <br />
+
+              <div class="info">Реквизиты</div>
+              <br />
+              <div>
+                УНП 400031327<br />
+                274920, Гомельская обл.,<br />
+                Петриковский р-н, Копаткевичский с/с,<br />
+                гп Копаткевичи, пер. Мелиоративный, д. 4
+              </div>
+
+              <!-- <details>
+                <summary>Полный список контактов</summary>
+                <div></div>
+              </details> -->
+            </td>
+            <td>
+              <div class="map">
+                <div class="yMap" id="yMap-pmk-4">Карта 2</div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- pmk-5 -->
+          <tr class="contact hidden">
+            <td class="contact-info">
+              <div class="info">Контакты</div>
+              <br />
+              <div class="info-text">
+                8 02333 56928
+                <i class="fa fa-phone mr-3"></i><br />
+                (02333) 56928 (603)
+                <i class="fa fa-fax" aria-hidden="true"></i><br />
+                (02333) 56951 (605)
+                <i class="fa fa-fax" aria-hidden="true"></i>
+              </div>
+              <div class="info-text">
+                pmk5@gost.gomel.by
+                <i class="fas fa-at"></i>
+              </div>
+              <br />
+
+              <div class="info">Реквизиты</div>
+              <br />
+              <div>
+                ПМК-5 ОАО "Гомельский объединённый<br />
+                строительный трест"<br />
+                УНП 401163570<br />
+                247050, Гомельская обл.,<br />
+                г. Добруш, пер. Крылова, д. 4
+              </div>
+
+              <!-- <details>
+                <summary>Полный список контактов</summary>
+                <div></div>
+              </details> -->
+            </td>
+            <td>
+              <div class="map">
+                <div class="yMap" id="yMap-pmk-5">Карта 3</div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- pmk-16 -->
+          <tr class="contact hidden">
+            <td class="contact-info">
+              <div class="info">Контакты</div>
+              <br />
+              <div class="info-text">
+                8 0232 214490
+                <i class="fa fa-phone mr-3"></i><br />
+                (02333) 56928 (603)
+                <i class="fa fa-fax" aria-hidden="true"></i><br />
+                (02333) 56951 (605)
+                <i class="fa fa-fax" aria-hidden="true"></i>
+              </div>
+              <div class="info-text">
+                pmk16@gost.gomel.by
+                <i class="fas fa-at"></i>
+              </div>
+              <br />
+
+              <div class="info">Реквизиты</div>
+              <br />
+              <div>
+                ППО ПМК-16 ОАО "Гомельский<br />
+                объединённый строительный трест"<br />
+                УНП 400237992<br />
+                246010, г. Гомель,<br />
+                ул. Могилевская, д. 23
+              </div>
+
+              <!-- <details>
+                <summary>Полный список контактов</summary>
+                <div></div>
+              </details> -->
+            </td>
+            <td>
+              <div class="map">
+                <div class="yMap" id="yMap-pmk-16">Карта 4</div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- pmk-43 -->
+          <tr class="contact hidden">
+            <td class="contact-info">
+              <div class="info">Контакты</div>
+              <br />
+              <div class="info-text">
+                8 02345 54387
+                <i class="fa fa-phone mr-3"></i><br />
+                (02333) 56928 (603)
+                <i class="fa fa-fax" aria-hidden="true"></i><br />
+                (02345) 52886 (403)
+                <i class="fa fa-fax" aria-hidden="true"></i>
+              </div>
+              <div class="info-text">
+                pmk43@gost.gomel.by
+                <i class="fas fa-at"></i>
+              </div>
+              <br />
+
+              <div class="info">Реквизиты</div>
+              <br />
+              <div>
+                ППО ПМК-43 ОАО "Гомельский<br />
+                объединённый строительный трест"<br />
+                УНП 401149654<br />
+                247710, Гомельская обл.,<br />
+                г. Калинковичи, ул. Островского, д. 36
+              </div>
+
+              <!-- <details>
+                <summary>Полный список контактов</summary>
+                <div></div>
+              </details> -->
+            </td>
+            <td>
+              <div class="map">
+                <div class="yMap" id="yMap-pmk-43">Карта 5</div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- pmk-76 -->
+          <tr class="contact hidden">
+            <td class="contact-info">
+              <div class="info">Контакты</div>
+              <br />
+              <div class="info-text">
+                8 02353 33293
+                <i class="fa fa-phone mr-3"></i><br />
+                (02353) 33293
+                <i class="fa fa-fax" aria-hidden="true"></i><br />
+                (02353) 33291 (707)
+                <i class="fa fa-fax" aria-hidden="true"></i>
+              </div>
+              <div class="info-text">
+                pmk43@gost.gomel.by
+                <i class="fas fa-at"></i>
+              </div>
+              <br />
+
+              <div class="info">Реквизиты</div>
+              <br />
+              <div>
+                ПМК-76 ОАО "Гомельский<br />
+                объединённый строительный трест"<br />
+                УНП 400050033<br />
+                247960, Гомельская обл.,<br />
+                г. Житковичи, ул. Октябрьская, д. 57
+              </div>
+
+              <!-- <details>
+                <summary>Полный список контактов</summary>
+                <div></div>
+              </details> -->
+            </td>
+            <td>
+              <div class="map">
+                <div class="yMap" id="yMap-pmk-76">Карта 6</div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- up-jsk -->
+          <tr class="contact hidden">
+            <td class="contact-info">
+              <div class="info">Контакты</div>
+              <br />
+              <div class="info-text">
+                jsk@gost.gomel.by
+                <i class="fas fa-at"></i>
+              </div>
+              <br />
+
+              <div class="info">Реквизиты</div>
+              <br />
+              <div>
+                УП ЖСК ОАО "Гомельский объединённый<br />
+                строительный трест"<br />
+                УНП 400022439<br />
+                246028, Гомельская обл.,<br />
+                г. Гомель, ул. Советская, д. 126
+              </div>
+
+              <!-- <details>
+                <summary>Полный список контактов</summary>
+                <div></div>
+              </details> -->
+            </td>
+            <td>
+              <div class="map">
+                <div class="yMap" id="yMap-jsk">Карта 7</div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
   <!-- gost -->
-  <section class="container">
+  <section class="container hidden">
     <details>
       <summary>
         ОАО "Гомельский объединённый строительный трест"
@@ -309,49 +608,16 @@
           </tbody>
         </table>
       </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <h2 class="h4 m-0">
-            Реквизиты:
-          </h2>
-          <p class="pb-0">
-            ОАО "Гомельский объединённый<br />
-            строительный трест"<br />
-            УНП 400022439<br />
-            246028, Гомельская обл.,<br />
-            г. Гомель, ул. Советская, д. 126
-          </p>
-
-          <h2 class="h4 m-0">
-            Время работы:
-          </h2>
-          <p class="pb-0">
-            пн-пт: 8:00 – 17:00<br />
-            обед: 12:00 – 13:00<br />
-            сб-вс: выходной
-          </p>
-
-          <h2 class="h4 m-0">
-            Почта:
-          </h2>
-          <p class="pb-0">
-            gost@gost.gomel.by
-          </p>
-        </div>
-        <div class="col-lg-8 map">
-          <div class="yMap" id="yMap-gost"></div>
-        </div>
-      </div>
     </details>
   </section>
 
   <!-- up jsk -->
-  <section class="container">
+  <section class="container hidden">
     <details>
       <summary>
         УП ЖСК ОАО "Гомельский объединённый строительный трест"
       </summary>
+
       <div class="pre-table">
         <table class="table table-bordered table-hover table-striped">
           <thead>
@@ -445,45 +711,11 @@
           </tbody>
         </table>
       </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <h2 class="h4 m-0">
-            Реквизиты:
-          </h2>
-          <p class="pb-0">
-            УП ЖСК ОАО "Гомельский объединённый<br />
-            строительный трест"<br />
-            УНП 400022439<br />
-            246028, Гомельская обл.,<br />
-            г. Гомель, ул. Советская, д. 126
-          </p>
-
-          <h2 class="h4 m-0">
-            Время работы:
-          </h2>
-          <p class="pb-0">
-            пн-пт: 8:00 – 17:00<br />
-            обед: 12:00 – 13:00<br />
-            сб-вс: выходной
-          </p>
-
-          <h2 class="h4 m-0">
-            Почта:
-          </h2>
-          <p class="pb-0">
-            jsk@gost.gomel.by
-          </p>
-        </div>
-        <div class="col-lg-8 map">
-          <div class="yMap" id="yMap-jsk"></div>
-        </div>
-      </div>
     </details>
   </section>
 
   <!-- pmk-4 -->
-  <section class="container">
+  <section class="container hidden">
     <details>
       <summary>
         ПМК-4 ОАО "Гомельский объединённый строительный трест"
@@ -592,45 +824,11 @@
           </tbody>
         </table>
       </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <h2 class="h4 m-0">
-            Реквизиты:
-          </h2>
-          <p class="pb-0">
-            ПМК-4 ОАО "Гомельский объединённый<br />
-            строительный трест"<br />
-            УНП 400031327<br />
-            274920, Гомельская обл.,<br />
-            Петриковский р-н, Копаткевичский с/с,<br />
-            гп Копаткевичи, пер. Мелиоративный, д. 4
-          </p>
-
-          <h2 class="h4 m-0">
-            Обратная связь:
-          </h2>
-          <p class="pb-0">
-            факс (02350) 20934 (201)<br />
-            факс (02350) 21079 (202)
-          </p>
-
-          <h2 class="h4 m-0">
-            Почта:
-          </h2>
-          <p class="pb-0">
-            pmk4@gost.gomel.by
-          </p>
-        </div>
-        <div class="col-lg-8 map">
-          <div class="yMap" id="yMap-pmk-4"></div>
-        </div>
-      </div>
     </details>
   </section>
 
   <!-- pmk-5 -->
-  <section class="container">
+  <section class="container hidden">
     <details>
       <summary>
         ПМК-5 ОАО "Гомельский объединённый строительный трест"
@@ -769,44 +967,11 @@
           </tbody>
         </table>
       </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <h2 class="h4 m-0">
-            Реквизиты:
-          </h2>
-          <p class="pb-0">
-            ПМК-5 ОАО "Гомельский объединённый<br />
-            строительный трест"<br />
-            УНП 401163570<br />
-            247050, Гомельская обл.,<br />
-            г. Добруш, пер. Крылова, д. 4
-          </p>
-
-          <h2 class="h4 m-0">
-            Обратная связь:
-          </h2>
-          <p class="pb-0">
-            факс (02333) 56928 (603)<br />
-            факс (02333) 56951 (605)
-          </p>
-
-          <h2 class="h4 m-0">
-            Почта:
-          </h2>
-          <p class="pb-0">
-            pmk5@gost.gomel.by
-          </p>
-        </div>
-        <div class="col-lg-8 map">
-          <div class="yMap" id="yMap-pmk-5"></div>
-        </div>
-      </div>
     </details>
   </section>
 
   <!-- pmk-16 -->
-  <section class="container">
+  <section class="container hidden">
     <details>
       <summary>
         ПМК-16 ОАО "Гомельский объединённый строительный трест"
@@ -895,44 +1060,11 @@
           </tbody>
         </table>
       </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <h2 class="h4 m-0">
-            Реквизиты:
-          </h2>
-          <p class="pb-0">
-            ППО ПМК-16 ОАО "Гомельский<br />
-            объединённый строительный трест"<br />
-            УНП 400237992<br />
-            246010, г. Гомель,<br />
-            ул. Могилевская, д. 23
-          </p>
-
-          <h2 class="h4 m-0">
-            Обратная связь:
-          </h2>
-          <p class="pb-0">
-            факс (0232) 214109 (503)<br />
-            факс (0232) 264466 (501)
-          </p>
-
-          <h2 class="h4 m-0">
-            Почта:
-          </h2>
-          <p class="pb-0">
-            pmk16@gost.gomel.by
-          </p>
-        </div>
-        <div class="col-lg-8 map">
-          <div class="yMap" id="yMap-pmk-16"></div>
-        </div>
-      </div>
     </details>
   </section>
 
   <!-- pmk-43 -->
-  <section class="container">
+  <section class="container hidden">
     <details>
       <summary>
         ППО ПМК-43 ОАО "Гомельский объединённый строительный трест"
@@ -1051,44 +1183,11 @@
           </tbody>
         </table>
       </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <h2 class="h4 m-0">
-            Реквизиты:
-          </h2>
-          <p class="pb-0">
-            ППО ПМК-43 ОАО "Гомельский<br />
-            объединённый строительный трест"<br />
-            УНП 401149654<br />
-            247710, Гомельская обл.,<br />
-            г. Калинковичи, ул. Островского, д. 36
-          </p>
-
-          <h2 class="h4 m-0">
-            Обратная связь:
-          </h2>
-          <p class="pb-0">
-            факс (02345) 54387 (402)<br />
-            факс (02345) 52886 (403)
-          </p>
-
-          <h2 class="h4 m-0">
-            Почта:
-          </h2>
-          <p class="pb-0">
-            pmk43@gost.gomel.by
-          </p>
-        </div>
-        <div class="col-lg-8 map">
-          <div class="yMap" id="yMap-pmk-43"></div>
-        </div>
-      </div>
     </details>
   </section>
 
   <!-- pmk-76 -->
-  <section class="container">
+  <section class="container hidden">
     <details>
       <summary>
         ПМК-76 ОАО "Гомельский объединённый строительный трест"
@@ -1185,39 +1284,6 @@
             </tr>
           </tbody>
         </table>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4">
-          <h2 class="h4 m-0">
-            Реквизиты:
-          </h2>
-          <p class="pb-0">
-            ПМК-76 ОАО "Гомельский<br />
-            объединённый строительный трест"<br />
-            УНП 400050033<br />
-            247960, Гомельская обл.,<br />
-            г. Житковичи, ул. Октябрьская, д. 57
-          </p>
-
-          <h2 class="h4 m-0">
-            Обратная связь:
-          </h2>
-          <p class="pb-0">
-            телефон (02353) 33293<br />
-            факс (02353) 33291 (707)
-          </p>
-
-          <h2 class="h4 m-0">
-            Почта:
-          </h2>
-          <p class="pb-0">
-            pmk76@gost.gomel.by
-          </p>
-        </div>
-        <div class="col-lg-8 map">
-          <div class="yMap" id="yMap-pmk-76"></div>
-        </div>
       </div>
     </details>
   </section>

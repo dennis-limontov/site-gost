@@ -66,6 +66,7 @@
 }
   
 .gallery ul li {
+  min-height: 300px;
   list-style:none;
   float: left;
   font: 10px/1.5 Verdana, Helvetica, Sans-serif;

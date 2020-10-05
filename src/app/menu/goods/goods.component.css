@@ -1,22 +1,17 @@
 .goods {
-    background-image: url(assets\img\unmarketable.jpg);
-    background-size: cover;
-    -moz-background-size: cover; /* Firefox 3.6+ */
-    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: cover; /* Opera 9.6+ */
+    background-color: white;
     min-height: 100vh;
 }
 
 .goods-body {
-    background-color: #009236;
     margin: 0 80px;
     opacity: 0.95;
 }
 
 .goods-caption {
-    background-color: black;
-    color: #009236;
-    padding: 20px 40px;
+    color: #3F3F3F;
+    text-align: center;
+    padding: 40px;
 }
 
 .goods-space {
@@ -24,8 +19,15 @@
 }
 
 .goods-text {
-    height: 333px;
-    padding: 20px 40px;
+    color: black;
+    height: 200px;
+    padding: 0px 40px;
+    margin-left: -40px;
+}
+
+.services-undercaption {
+    font-size: 14pt;
+    line-height: 2em;
 }
 
 @media screen and (max-width: 1024px) {
