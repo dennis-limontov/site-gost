@@ -8,10 +8,14 @@
 .certificates ul li {
     list-style-type: none;
 }
-.certificates ul li:before {
+.certificates ul li:before,
+.services-text ul li:before,
+.services-text ul li ul li:before {
     color: green;
-    content: "\140A";
+    content: "\2022";
+    font-size: 25pt;
     padding-right: 30px;
+    vertical-align: sub;
 }
 
 .certificates-text {
@@ -47,18 +51,11 @@
 .services-text ul li {
     list-style-type: none;
 }
-.services-text ul li:before {
-    color: green;
-    content: "\2022";
-    padding-right: 30px;
-}
 .services-text ul li ul li {
     list-style-type: none;
 }
 .services-text ul li ul li:before {
-    color: green;
-    content: "\2058";
-    padding-right: 30px;
+    color: #3f3f3f!important;
 }
 
 .services-undercaption {

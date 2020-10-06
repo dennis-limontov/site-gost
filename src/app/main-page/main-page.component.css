@@ -88,11 +88,13 @@
   color: #009236;
 }
 
+.main-news-inner {
+  min-height: 150px;
+}
 .main-news-inner:hover {
-  -webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
-  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.7);
   height: 145px;
-  margin: 5px;
   width: 175px;
 }
 
