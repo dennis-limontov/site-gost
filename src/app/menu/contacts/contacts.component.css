@@ -34,8 +34,7 @@
 
 .map {
   align-content: center;
-  margin-top: 20px;
-  padding: 0 30px;
+  margin: 0 0 -20px 40px;
 }
 
 .material-icons {
@@ -68,13 +67,13 @@
   text-align: center;
 }
 
-/* .yMap {
-  box-shadow: 0 0 0 2px black, 0 0 0 4px white, 0 0 0 12px #009236;
+.yMap {
+  /* box-shadow: 0 0 0 2px black, 0 0 0 4px white, 0 0 0 12px #009236;
   height: 100%;
-  margin: 20px 0px 20px -25px;
-  min-height: 480px;
-  width: 99%;
-} */
+  margin: 20px 0px 20px -25px; */
+  min-height: calc(100vh - 150px);
+  width: 100%;
+}
 
 details {
   text-align: left;
@@ -157,7 +156,7 @@ thead tr th {
 }
 
 .contact-info {
-  width: 300px;
+  width: 200px;
 }
 
 .hidden {
