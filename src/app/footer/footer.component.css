@@ -50,7 +50,7 @@
     max-height: 0;
 }
 
-footer h6 {
+footer .text-uppercase {
     color: gray;
 }
 
