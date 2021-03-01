@@ -1,4 +1,4 @@
-/* footer-first */
+/* header-first */
 
 .header-first {
     background-color: white;
@@ -35,7 +35,11 @@
     color: #03cc1e;
 }
 
-/* footer-second */
+/* header-second */
+
+.bg-dark {
+    background-color: #003513!important;
+}
 
 .header-second {
     background-color: white;
