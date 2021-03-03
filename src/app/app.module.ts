@@ -31,11 +31,6 @@ const appRoutes: Routes = [
     component: GoodsComponent,
   },
   {
-    path: "main",
-    pathMatch: "full",
-    component: MainPageComponent,
-  },
-  {
     path: "portfolio",
     pathMatch: "full",
     component: PortfolioComponent,

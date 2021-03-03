@@ -3,14 +3,9 @@
 
 <main role="main">
   <section class="main-view">
-    <ul class="main-slideshow">
-      <li><span>Image 01</span><div></div></li>
-      <li><span>Image 02</span><div></div></li>
-      <li><span>Image 03</span><div></div></li>
-      <li><span>Image 04</span><div></div></li>
-      <li><span>Image 05</span><div></div></li>
-      <li><span>Image 06</span><div></div></li>
-    </ul>
+    <div class="logo-new">
+      <img src="../../assets/img/logo-new.png">
+    </div>
 
     <div class="main-view-text">
       <h2>СТРОИМ С УМОМ!</h2>
@@ -19,6 +14,62 @@
     </div>
   </section>
 
+  <div class="main-gallery">
+    <div class="main-slogan main-slogan-dark">НАШИ ОБЪЕКТЫ</div>
+    <div class="main-line main-line-dark"></div>
+    <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+                [animation]="'slide'">
+      <mdb-carousel-item *ngFor="let item of slides; let i = index">
+        <div class="col-md-4 col-sm-6 col-xs-6" *ngFor="let card of item; let cardIndex = index">
+          <mdb-card class="my-1">
+            <mdb-card-img [src]="card.img" alt="Card image cap" [class]="minimized" class="minimized"></mdb-card-img>
+            <mdb-card-body>
+              <mdb-card-title>
+                <h4>{{card.title}}</h4>
+              </mdb-card-title>
+              <p>{{card.description}}</p>
+              <!-- <a href="#" mdbBtn color="primary" class="waves-light" mdbWavesEffect>{{card.buttonText}}</a> -->
+            </mdb-card-body>
+          </mdb-card>
+        </div>
+      </mdb-carousel-item>
+    </mdb-carousel>
+  </div>
+
+  <div class="border-main">
+    <div class="main-slogan main-slogan-white">НАШИ ПРЕИМУЩЕСТВА</div>
+    <div class="main-line"></div>
+    <div class="border-main-block">
+      <div class="border-main-text">
+        <div class="text-1">
+          НАША МИССИЯ|СТРАТЕГИЧЕСКИЕ ЗАДАЧИ|КОНКУРЕНТОСПОСОБНОСТЬ|
+          ЭФФЕКТИВНОСТЬ|ИННОВАЦИИ
+        </div>
+        <div class="text-2">
+          Возвести строительную отрасль на качественно новый уровень и стать
+          ведущей строительной компанией в Республике Беларусь и за рубежом,
+          показывая пример стабильности, качества выполнения строительных работ
+          и обслуживания заказчиков. |Стратегия ОАО «Гомельский объединенный
+          строительный трест» состоит в достижении и сохранении ведущих позиций
+          по всем направлениям своей деятельности. Залог успешной работы и
+          стабильности организации мы видим в постоянном наращивании опыта в
+          сочетании с инновационным подходом к производственным вопросам.
+          |Приоритетная задача компании – обеспечение долгосрочной
+          конкурентоспособности. Именно поэтому в развитии организации немалое
+          место отводится соблюдению стандартов работы, гарантиям взятых
+          обязательств и уровню корпоративной ответственности. |Мы понимаем
+          важность эффективной работы для процветания организации. Мы тратим
+          много усилий для своевременных расчётов, снижения издержек и разумного
+          использования кадрового потенциала. Поэтому нам удаётся предлагать
+          нашим заказчикам и партнёрам обоюдовыгодные условия работы.
+          |Организация нацелена на постоянное обновление и модернизацию, готова
+          вкладывать средства в обучение сотрудников и освоение новых
+          технологий.
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <div class="about-us-all">
     <div class="about-us-back">
       <div class="col-md-5 col-lg-5 about-logo">
@@ -64,62 +115,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="border-main">
-    <div class="main-slogan main-slogan-white">НАШИ ПРЕИМУЩЕСТВА</div>
-    <div class="main-line"></div>
-    <div class="border-main-block">
-      <div class="border-main-text">
-        <div class="text-1">
-          НАША МИССИЯ|СТРАТЕГИЧЕСКИЕ ЗАДАЧИ|КОНКУРЕНТОСПОСОБНОСТЬ|
-          ЭФФЕКТИВНОСТЬ|ИННОВАЦИИ
-        </div>
-        <div class="text-2">
-          Возвести строительную отрасль на качественно новый уровень и стать
-          ведущей строительной компанией в Республике Беларусь и за рубежом,
-          показывая пример стабильности, качества выполнения строительных работ
-          и обслуживания заказчиков. |Стратегия ОАО «Гомельский объединенный
-          строительный трест» состоит в достижении и сохранении ведущих позиций
-          по всем направлениям своей деятельности. Залог успешной работы и
-          стабильности организации мы видим в постоянном наращивании опыта в
-          сочетании с инновационным подходом к производственным вопросам.
-          |Приоритетная задача компании – обеспечение долгосрочной
-          конкурентоспособности. Именно поэтому в развитии организации немалое
-          место отводится соблюдению стандартов работы, гарантиям взятых
-          обязательств и уровню корпоративной ответственности. |Мы понимаем
-          важность эффективной работы для процветания организации. Мы тратим
-          много усилий для своевременных расчётов, снижения издержек и разумного
-          использования кадрового потенциала. Поэтому нам удаётся предлагать
-          нашим заказчикам и партнёрам обоюдовыгодные условия работы.
-          |Организация нацелена на постоянное обновление и модернизацию, готова
-          вкладывать средства в обучение сотрудников и освоение новых
-          технологий.
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="main-gallery">
-    <div class="main-slogan main-slogan-dark">НАШИ ОБЪЕКТЫ</div>
-    <div class="main-line main-line-dark"></div>
-    <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
-                [animation]="'slide'">
-      <mdb-carousel-item *ngFor="let item of slides; let i = index">
-        <div class="col-md-4 col-sm-6 col-xs-6" *ngFor="let card of item; let cardIndex = index">
-          <mdb-card class="my-1">
-            <mdb-card-img [src]="card.img" alt="Card image cap" [class]="minimized" class="minimized"></mdb-card-img>
-            <mdb-card-body>
-              <mdb-card-title>
-                <h4>{{card.title}}</h4>
-              </mdb-card-title>
-              <p>{{card.description}}</p>
-              <!-- <a href="#" mdbBtn color="primary" class="waves-light" mdbWavesEffect>{{card.buttonText}}</a> -->
-            </mdb-card-body>
-          </mdb-card>
-        </div>
-      </mdb-carousel-item>
-    </mdb-carousel>
   </div>
 
   <div class="main-video">
