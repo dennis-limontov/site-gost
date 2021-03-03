@@ -5,9 +5,13 @@
 .company {
     padding-left: 130px;
 }
+.company, .contacts, .links {
+    line-height: 1;
+}
 
-.contacts {
-    line-height: 2;
+.contacts p a, .nav-link, .pdf a {
+    display: inline-block;
+    padding: 0.5rem 0;
 }
 
 .footer-copyright {
@@ -17,10 +21,6 @@
 
 .footer-copyright:hover {
     color: #009236;
-}
-
-.links {
-    line-height: 1;
 }
 
 .mr-3 {
@@ -42,8 +42,8 @@
     text-decoration: none;
 }
 
-.nav-link {
-    padding: 0.5rem 0;
+.text-uppercase {
+    height: 20px;
 }
 
 .underline {
