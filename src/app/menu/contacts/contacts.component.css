@@ -35,6 +35,7 @@
 }
 
 .contact-info {
+  padding-top: 40px;
   width: 20%;
 }
 
@@ -44,7 +45,7 @@
 
 .contact-name {
   font-weight: bold;
-  margin: 20px 0 0 -20px;
+  margin: 20px 0 0 -30px;
   position: absolute;
   text-align: -webkit-center;
 }
@@ -88,13 +89,9 @@
   margin: -2px -2px -24px 40px;
 }
 
-/* .material-icons {
-  font-size: 12pt;
-} */
-
 .pre-table {
   margin: 10px 10px -10px 10px;
-  padding-top: 25px;
+  padding-top: 175px;
 }
 
 .yMap {
@@ -116,10 +113,16 @@ details > summary {
 }
 
 summary {
+  background-color: green;
+  color: white;
   font-weight: bold;
-  margin: -180px 0 0 -340px;
-  padding: 10px;
-  text-align: -webkit-center;
+  margin: -180px 0 0 5px;
+  padding: 7px 7px 7px 10px;
+  text-align: left;
+  width: 200px;
+}
+summary:hover {
+  background-color: #003513;
 }
 
 table {
@@ -144,23 +147,9 @@ thead tr th {
   padding: 5px 10px 5px 10px !important;
 }
 
-/* @media (min-width: 32em) {
-  .col-lg-4 {
-    margin-top: 0;
-  }
-
-  .yMap {
-    margin: 0 0 15px 0;
-    max-height: 360px;
+@media screen and (max-width: 1024px) {
+  .contact-name {
+    margin: 20px 0 0 20px;
+    max-width: 400px;
   }
 }
-
-@media (min-width: 40em) {
-  .col-lg-4 {
-    margin-top: 0;
-  }
-
-  .yMap {
-    margin: 0 0 15px 0;
-  }
-} */
