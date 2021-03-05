@@ -28,7 +28,7 @@
 }
 
 .border-main {
-  background: url("../../assets/img/gost-main-5.jpg") no-repeat;
+  background: url("../../assets/img/gost-main-5-min.jpg") no-repeat;
   -moz-background-size: 100%; /* Firefox 3.6+ */
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 100%; /* Opera 9.6+ */
@@ -133,7 +133,7 @@
 }
 
 .main-video {
-  background: url("../../assets/img/gost-main-6.jpg");
+  background: url("../../assets/img/gost-main-6-min.jpg");
   -moz-background-size: 160%; /* Firefox 3.6+ */
   -webkit-background-size: 160%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 160%; /* Opera 9.6+ */
@@ -152,7 +152,7 @@
 
 .main-view {
   padding: 12.4% 0;
-  background: url(../../assets/img/gost-main.jpg) no-repeat 30%;
+  background: url(../../assets/img/gost-main-min.jpg) no-repeat 30%;
   background-size: cover;
   min-height: 650px;
   overflow: hidden;
