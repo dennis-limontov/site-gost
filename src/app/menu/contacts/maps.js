@@ -14,7 +14,7 @@ const coordinates = new Map([
 
 export default function () {
   try {
-    ymaps.load().then((maps) => {
+    ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU').then((maps) => {
       maps.ready(() => {
         coordinates.forEach((value, key) => {
           const placemark = new maps.Placemark(value);

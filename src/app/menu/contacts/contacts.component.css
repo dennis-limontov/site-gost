@@ -85,7 +85,7 @@
 
 .map {
   align-content: center;
-  margin: -2px -2px -28px 40px;
+  margin: -2px -2px -24px 40px;
 }
 
 /* .material-icons {
@@ -117,7 +117,7 @@ details > summary {
 
 summary {
   font-weight: bold;
-  margin: -40px 0 0 -20px;
+  margin: -180px 0 0 -340px;
   padding: 10px;
   text-align: -webkit-center;
 }
