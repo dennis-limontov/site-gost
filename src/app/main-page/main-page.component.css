@@ -87,6 +87,7 @@
 
 .main-news {
   background-color: white;
+  height: 400px;
 }
 
 .main-news-doc {
@@ -100,16 +101,18 @@
 }
 
 .main-news-inner {
+  margin: 0 5px;
   min-height: 150px;
 }
 .main-news-inner:hover {
   -webkit-box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.7);
   box-shadow: inset 0px 0px 7px rgba(0, 0, 0, 0.7);
-  height: 145px;
+  height: 185px;
   width: 175px;
 }
 
 .main-news-some {
+  display: flex;
   padding: 20px 50px 40px 50px;
 }
 .main-news-some img {

@@ -19,7 +19,7 @@
 }
 
 .portfolio {
-  background-image: url(assets\img\portfolio.jpg);
+  background-image: url(assets\img\portfolio-min.jpg);
   background-size: cover;
   -moz-background-size: cover; /* Firefox 3.6+ */
   -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
