@@ -30,7 +30,7 @@ export class ContactsComponent implements OnInit {
       contactNames[i].classList.add("hidden");
       buttons[i].classList.remove("current");
       contactList[i].classList.add("hidden");
-      contactInfoList[i].style.opacity = "0";
+      // contactInfoList[i].style.opacity = "0";
     }
 
     contacts[index].classList.remove("hidden");

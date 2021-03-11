@@ -68,17 +68,12 @@
 .fa, .fas {
   margin-top: 5px;
   padding-left: 20px;
-  position: absolute;
 }
 
 .info {
   color: #3f3f3f;
   font-size: 20pt;
   font-weight: bold;
-}
-
-.info-text {
-  margin-right: 40px;
 }
 
 .last-space {
