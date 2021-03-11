@@ -37,6 +37,7 @@
 .contact-info {
   padding-top: 40px;
   width: 20%;
+  opacity: 0;
 }
 
 .contact-map {
