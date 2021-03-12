@@ -59,7 +59,10 @@ export class ContactsComponent implements OnInit {
       const table = target.getElementsByTagName("table");
 
       if (table && table[0]) {
-        table[0].scrollIntoView({ block: "start", behavior: "smooth" });
+        // table[0].scrollIntoView({ block: "start", behavior: "smooth" });
+        const topOffset = table[0].getBoundingClientRect().top + window.scrollY;
+        console.log(topOffset);
+        window.scrollTo({ left: 0, top: topOffset - 100, behavior: "smooth" });
       }
     }
   }
