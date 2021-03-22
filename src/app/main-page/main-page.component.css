@@ -85,6 +85,15 @@
   border-top: 1px solid #16181a;
 }
 
+.main-links {
+  background-color: white;
+  text-align: center;
+}
+.main-links a img {
+  max-height: 75px;
+  padding: 5px;
+}
+
 .main-news {
   background-color: white;
   height: 400px;
