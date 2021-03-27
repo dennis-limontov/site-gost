@@ -12,7 +12,8 @@
 }
 
 .buttons {
-  padding-right: 20px;
+  padding: 150px 20px 0 0;
+  position: absolute;
   width: 300px;
 }
 .buttons button {
@@ -24,7 +25,7 @@
   padding: 4px 10px;
   text-align: start;
   text-decoration: none;
-  width: 200px;
+  width: 175px;
 }
 .current {
   background-color: #77dd77!important;
@@ -35,9 +36,11 @@
 }
 
 .contact-info {
+  align-self: center;
+  padding-right: 30px!important;
   padding-top: 40px;
   width: 20%;
-  opacity: 0;
+  opacity: 1;
 }
 
 .contact-map {
@@ -87,10 +90,11 @@
 
 .pre-table {
   margin: 10px 10px -10px 10px;
-  padding-top: 175px;
+  padding-top: 200px;
 }
 
 .yMap {
+  margin-bottom: -22px;
   min-height: calc(100vh - 150px);
   width: 100%;
 }
@@ -112,10 +116,10 @@ summary {
   background-color: green;
   color: white;
   font-weight: bold;
-  margin: -180px 0 0 5px;
+  margin: -219px 0 0 5px;
   padding: 7px 7px 7px 10px;
   text-align: left;
-  width: 200px;
+  width: 175px;
 }
 summary:hover {
   background-color: #003513;
@@ -147,5 +151,25 @@ thead tr th {
   .contact-name {
     margin: 20px 0 0 20px;
     max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contact-info {
+    align-items: center;
+    font-size: 80%;
+    height: 450px
+  }
+
+  .pre-table {
+    margin-top: 490px;
+  }
+
+  .yMap {
+    margin-top: 20px;
+  }
+
+  summary {
+    margin-top: -689px;
   }
 }
