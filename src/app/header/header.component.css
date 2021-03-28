@@ -81,6 +81,7 @@
 
 .nav-item {
     padding: 0 60px;
+    margin: auto;
 }
 .nav-item:hover .list {
     display: grid;

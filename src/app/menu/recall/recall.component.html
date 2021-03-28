@@ -3,23 +3,32 @@
     content="246028, г. Гомель, ул. Советская, д. 126 | телефон 8-0232-233311" />
 </head>
 
-<body>
+<body *transloco="let t">
+  <div class="empty"></div>
+  <div class="warning">
+    <div class="bold-caption">{{t('recall.warning.caption')}}</div>
+    <div class="regular-text">
+      {{t('recall.warning.text.1')}}<br>
+      {{t('recall.warning.text.2')}}<br>
+      {{t('recall.warning.text.3')}}
+    </div>
+  </div>
   <form class="form-horizontal" id="recall">
     <div class="form-group">
-      <label for="name" class="col-sm-2 control-label">Имя</label>
+      <label for="name" class="col-sm-2 control-label">{{t('recall.name')}}</label>
       <div class="col-sm-8">
-        <input type="text" class="form-control" id="name" name="name" value="Vasya Pupkin" placeholder="Имя">
+        <input type="text" class="form-control" id="name" name="name" placeholder="{{t('recall.name')}}">
       </div>
     </div>
     <div class="form-group">
-      <label for="phone" class="col-sm-2 control-label">Телефон</label>
+      <label for="phone" class="col-sm-2 control-label">{{t('recall.phone')}}</label>
       <div class="col-sm-8">
-        <input type="text" class="form-control" id="phone" name="phone" value="555-2368" placeholder="Телефон">
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="{{t('recall.phone')}}">
       </div>
     </div>
     <div class="form-group">
       <div class="col-sm-offset-2 col-sm-8">
-        <button type="submit" id="submit" class="btn btn-primary">Отправить</button>
+        <button type="submit" id="submit" class="btn btn-primary">{{t('recall.send')}}</button>
         <div></div>
       </div>
     </div>

@@ -12,3 +12,5 @@ if (mail($to, $subject, $message, $headers)) {
 } else {
   echo '<p style="color: red;">Error sending message!</p>';
 }
+
+?>
