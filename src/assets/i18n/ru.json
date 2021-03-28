@@ -1,0 +1,16 @@
+{
+  "header": {
+    "main": "Главная",
+    "services": "Услуги",
+    "goods": "Товары",
+    "portfolio": "Портфолио",
+    "contacts": "Контакты",
+    "submenu": {
+      "special_work": "Спецработы",
+      "common_work": "Общестр. работы",
+      "certificates": "Сертификаты",
+      "own_production": "Собственное производство",
+      "illiquid": "Неликвиды"
+    }
+  }
+}

@@ -100,6 +100,15 @@
     width: 100%;
 }
 
+.with-locale {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.locale.active {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1024px) {
     .nav-item {
         padding: 0 40px;
@@ -128,7 +137,7 @@
     .list a {
         padding: 8px 10px;
     }
-    
+
     .list a:hover {
         padding: 8px 10px;
     }
@@ -137,7 +146,7 @@
         right: 35px;
         top: 44px;
     }
-    
+
     .list-services {
         right: 100px;
         top: 45px;

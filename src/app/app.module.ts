@@ -14,6 +14,8 @@ import { PortfolioComponent } from './menu/portfolio/portfolio.component';
 
 import { OwlModule } from 'ngx-owl-carousel';
 import { ButtonUpComponent } from './components/button-up/button-up.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco/transloco-root.module';
 
 // определение маршрутов
 const appRoutes: Routes = [
@@ -52,7 +54,9 @@ const appRoutes: Routes = [
     BrowserModule,
     OwlModule,
     MDBBootstrapModule.forRoot(),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    TranslocoRootModule
   ],
   declarations: [
     AppComponent,

@@ -1,0 +1,16 @@
+{
+  "header": {
+    "main": "Галоўная",
+    "services": "Паслугі",
+    "goods": "Тавары",
+    "portfolio": "Партфоліо",
+    "contacts": "Кантакты",
+    "submenu": {
+      "special_work": "Спецработы",
+      "common_work": "Агульнабуд. працы",
+      "certificates": "Сертыфікаты",
+      "own_production": "Уласную вытворчасць",
+      "illiquid": "Неліквіды"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-export default function () {
+export default function ({ locale }) {
   $(document).ready(function() {
     var RBStickyNav = $('.RBsticky-element').offset().top;
     var stickyNav = function() {
@@ -16,4 +16,6 @@ export default function () {
         stickyNav();
     });
   });
+
+  document.getElementById(`locale-${locale}`).classList.add("active");
 }

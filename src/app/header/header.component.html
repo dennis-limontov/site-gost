@@ -5,46 +5,51 @@
         <i class="fa fa-phone mr-3"></i>
         <a href="tel: +375232233311" title="телефон">8 0232 23-33-11</a>
       </div>
-  
+
       <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 mx-auto mb-4 logo">
         <img src="../../assets/img/logo-2-min.png" />
       </div>
-  
-      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 mx-auto mb-4 header-fax">
-        <i class="fa fa-print mr-3"></i>
-        <span title="факс">8 0232 20-85-63</span>
+
+      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 mb-4 header-fax with-locale">
+        <div class="mx-auto">
+          <i class="fa fa-print mr-3"></i>
+          <span title="факс">8 0232 20-85-63</span>
+        </div>
+        <div>
+          <a on-click="changeLocale({ event: $event, locale: 'ru' })" id="locale-ru" class="locale">RU</a>
+          /
+          <a on-click="changeLocale({ event: $event, locale: 'be' })" id="locale-by" class="locale">BY</a>
+        </div>
       </div>
     </nav>
   </div>
 
-  <div class="header-second">
+  <div class="header-second" *transloco="let t">
     <nav class="navbar navbar-expand-sm bg-dark justify-content-center RBsticky-element">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" routerLink="">Главная</a>
+          <a class="nav-link" routerLink="">{{ t('header.main') }}</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" routerLink="/services">Услуги</a>
+          <a class="nav-link" routerLink="/services">{{ t('header.services') }}</a>
           <div class="list list-services" ng-controller="MainCtrl">
-            <a ng-click="scrollTo('SR')" routerLink="/services">Спецработы</a>
-            <a ng-click="scrollTo('OR')" routerLink="/services">Общестр. работы</a>
-            <a ng-click="scrollTo('CE')" routerLink="/services">Сертификаты</a>
+            <a ng-click="scrollTo('SR')" routerLink="/services">{{ t('header.submenu.special_work') }}</a>
+            <a ng-click="scrollTo('OR')" routerLink="/services">{{ t('header.submenu.common_work') }}</a>
+            <a ng-click="scrollTo('CE')" routerLink="/services">{{ t('header.submenu.certificates') }}</a>
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" routerLink="/goods">Товары</a>
+          <a class="nav-link" routerLink="/goods">{{ t('header.goods') }}</a>
           <div class="list list-goods">
-            <a ng-click="scrollTo('SP')" routerLink="/goods">Собственное производство</a>
-            <a ng-click="scrollTo('NL')" routerLink="/goods">Неликвиды</a>
+            <a ng-click="scrollTo('SP')" routerLink="/goods"></a>
+            <a ng-click="scrollTo('NL')" routerLink="/goods"></a>
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" routerLink="/portfolio">Портфолио</a>
+          <a class="nav-link" routerLink="/portfolio">{{ t('header.portfolio') }}</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" routerLink="/contacts">
-            Контакты
-          </a>
+          <a class="nav-link" routerLink="/contacts">{{ t('header.contacts') }}</a>
         </li>
       </ul>
     </nav>
