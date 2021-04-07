@@ -42,6 +42,10 @@
     text-decoration: none;
 }
 
+.pdf {
+    padding-bottom: 1rem;
+}
+
 .text-uppercase {
     height: 20px;
 }

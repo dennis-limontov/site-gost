@@ -4,20 +4,19 @@
 <script src="jquery.auto-text-rotating.js"></script>
 
 <main role="main">
-  <section class="main-view">
+  <section class="main-view" *transloco="let t">
     <div class="logo-new">
       <img src="../../assets/img/logo-new-min.png">
     </div>
 
     <div class="main-view-text">
-      <h2>СТРОИМ С УМОМ!</h2>
-      <h1>ОАО "Гомельский объединённый<br>
-        строительный трест"</h1>
+      <h2>{{ t('main-page.main-text-1') }}</h2>
+      <h1>{{ t('main-page.main-text-2') }}</h1>
     </div>
   </section>
 
-  <div class="main-gallery">
-    <div class="main-slogan main-slogan-dark">НАШИ ОБЪЕКТЫ</div>
+  <div class="main-gallery" *transloco="let t">
+    <div class="main-slogan main-slogan-dark">{{ t('main-page.objects') }}</div>
     <div class="main-line main-line-dark"></div>
     <mdb-carousel [isControls]="true" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
                 [animation]="'slide'">
@@ -38,35 +37,16 @@
     </mdb-carousel>
   </div>
 
-  <div class="border-main">
-    <div class="main-slogan main-slogan-white">НАШИ ПРЕИМУЩЕСТВА</div>
+  <div class="border-main" *transloco="let t">
+    <div class="main-slogan main-slogan-white">{{ t('main-page.advantages.slogan') }}</div>
     <div class="main-line"></div>
     <div class="border-main-block">
       <div class="border-main-text">
         <div class="text-1">
-          НАША МИССИЯ|СТРАТЕГИЧЕСКИЕ ЗАДАЧИ|КОНКУРЕНТОСПОСОБНОСТЬ|
-          ЭФФЕКТИВНОСТЬ|ИННОВАЦИИ
+          {{ t('main-page.advantages.text-1') }}
         </div>
         <div class="text-2">
-          Возвести строительную отрасль на качественно новый уровень и стать
-          ведущей строительной компанией в Республике Беларусь и за рубежом,
-          показывая пример стабильности, качества выполнения строительных работ
-          и обслуживания заказчиков. |Стратегия ОАО «Гомельский объединенный
-          строительный трест» состоит в достижении и сохранении ведущих позиций
-          по всем направлениям своей деятельности. Залог успешной работы и
-          стабильности организации мы видим в постоянном наращивании опыта в
-          сочетании с инновационным подходом к производственным вопросам.
-          |Приоритетная задача компании – обеспечение долгосрочной
-          конкурентоспособности. Именно поэтому в развитии организации немалое
-          место отводится соблюдению стандартов работы, гарантиям взятых
-          обязательств и уровню корпоративной ответственности. |Мы понимаем
-          важность эффективной работы для процветания организации. Мы тратим
-          много усилий для своевременных расчётов, снижения издержек и разумного
-          использования кадрового потенциала. Поэтому нам удаётся предлагать
-          нашим заказчикам и партнёрам обоюдовыгодные условия работы.
-          |Организация нацелена на постоянное обновление и модернизацию, готова
-          вкладывать средства в обучение сотрудников и освоение новых
-          технологий.
+          {{ t('main-page.advantages.text-2') }}
         </div>
       </div>
     </div>
@@ -80,47 +60,28 @@
         </div>
       </div>
 
-      <div class="col-md-7 col-lg-7 about-us row">
+      <div class="col-md-7 col-lg-7 about-us row" *transloco="let t">
         <div class="caption">
           <h1>
-            <b>О НАС</b>
+            <b>{{ t('main-page.about.slogan') }}</b>
           </h1>
         </div>
         <div class="undercaption">
           <p></p>
-          <p>
-            Открытое акционерное общество «Гомельский объединенный строительный
-            трест» является специализированным предприятием с более чем
-            40-летним опытом работы в строительной сфере. Трест входил в состав
-            Главполесьеводстроя и был создан для строительства совхозов на
-            мелиорируемых землях, а также производственных баз и объектов
-            жилищно-гражданского назначения для мелиоративных организаций.
-            Численность работающих общества составляет 919 человек.
-          </p>
+          <p>{{ t('main-page.about.text-1') }}</p>
           <p></p>
-          <p>
-            Кадровый потенциал Общества составляют профессионалы своего дела,
-            которые способны преодолевать любые трудности и находить
-            нестандартные решения и в условиях высокой конкуренции способны
-            строить качественно, быстро и за умеренную цену! В 2010 году
-            предприятие признано «Лучшей строительной организацией» года.
-          </p>
+          <p>{{ t('main-page.about.text-2') }}</p>
           <p></p>
-          <p>
-            Среднегодовая мощность предприятия составляет 38853 тыс.бел.руб.
-          </p>
+          <p>{{ t('main-page.about.text-3') }}</p>
           <p></p>
-          <p>
-            Организация аккредитована сертификатом соответствия требованиям СТБ
-            ISO 9001-2015.
-          </p>
+          <p>{{ t('main-page.about.text-4') }}</p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="main-video">
-    <div class="main-slogan main-slogan-white">ВИДЕОИНФОРМАЦИЯ</div>
+  <div class="main-video" *transloco="let t">
+    <div class="main-slogan main-slogan-white">{{ t('main-page.video') }}</div>
     <div class="main-line"></div>
     <video controls poster="../../assets/video/gost-main-poster.jpg">
       <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
@@ -151,8 +112,8 @@
     </video>
   </div>
 
-  <div class="main-news">
-    <div class="main-slogan main-slogan-dark">НОВОСТИ</div>
+  <div class="main-news" *transloco="let t">
+    <div class="main-slogan main-slogan-dark">{{ t('main-page.news') }}</div>
     <div class="main-line main-line-dark"></div>
     <div class="main-news-some">
       <div class="main-news-inner">

@@ -10,41 +10,44 @@
   </div>
 
   <div class="container container-first text-center text-md-left mt-5">
-    <div class="row mt-3">
+    <div class="row mt-3" *transloco="let t">
       <div class="col-md-4 col-lg-4 col-xl-5 mx-auto mb-4 company">
-        <p class="text-uppercase font-weight-bold">Информация</p>
+        <p class="text-uppercase font-weight-bold">{{ t('footer.info') }}</p>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
         <div class="pdf">
-          <a href="../../assets/pdf/audit-2019.PDF">Аудиторское заключение 2019</a>
+          <a href="../../assets/pdf/audit-2019.PDF">{{ t('footer.report-1') }}</a>
+        </div>
+        <div class="pdf">
+          <a href="../../assets/pdf/audit-2020.pdf">{{ t('footer.report-2') }}</a>
         </div>
       </div>
 
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4 links">
-        <p class="text-uppercase font-weight-bold">Ссылки</p>
+        <p class="text-uppercase font-weight-bold">{{ t('footer.links') }}</p>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
         <p class="nav-item active">
-          <a class="nav-link" routerLink="/main">Главная</a>
+          <a class="nav-link" routerLink="/main">{{ t('header.main') }}</a>
         </p>
         <p class="nav-item active">
-          <a class="nav-link" routerLink="/services">Услуги</a>
+          <a class="nav-link" routerLink="/services">{{ t('header.services') }}</a>
         </p>
         <p class="nav-item active">
-          <a class="nav-link" routerLink="/goods">Товары</a>
+          <a class="nav-link" routerLink="/goods">{{ t('header.goods') }}</a>
         </p>
         <p class="nav-item active">
-          <a class="nav-link" routerLink="/portfolio">Портфолио</a>
+          <a class="nav-link" routerLink="/portfolio">{{ t('header.portfolio') }}</a>
         </p>
         <p class="nav-item active">
-          <a class="nav-link" routerLink="/contacts">Контакты</a>
+          <a class="nav-link" routerLink="/contacts">{{ t('header.contacts') }}</a>
         </p>
       </div>
 
       <div class="col-md-4 col-lg-5 col-xl-4 mx-auto mb-4 contacts">
-        <p class="text-uppercase font-weight-bold">Наши контакты</p>
+        <p class="text-uppercase font-weight-bold">{{ t('footer.contacts') }}</p>
         <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto">
         <p>
           <i class="fa fa-home mr-3"></i>
-          <a class="footer-last" href="https://yandex.by/maps/155/gomel/?from=api-maps&ll=30.996345%2C52.450039&origin=jsapi_2_1_76&z=17">246028, г. Гомель, ул. Советская, 126</a>
+          <a class="footer-last" href="https://yandex.by/maps/155/gomel/?from=api-maps&ll=30.996345%2C52.450039&origin=jsapi_2_1_76&z=17">{{ t('footer.address') }}</a>
         </p>
         <p>
           <i class="fa fa-envelope mr-3"></i>
