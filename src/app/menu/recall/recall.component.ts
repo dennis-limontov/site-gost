@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import submit from "./submit";
+import "./submit";
 
 @Component({
   selector: 'app-recall',
@@ -10,7 +10,5 @@ export class RecallComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    submit();
-  }
+  ngOnInit() { }
 }

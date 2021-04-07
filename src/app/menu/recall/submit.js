@@ -1,5 +1,5 @@
-export default function submit() {
-  $('#recall').submit(function(e){
+window.onload = () => {
+  $('#recall').submit(function(e) {
     e.preventDefault();
 
     const data = $(this).serialize();
@@ -13,6 +13,8 @@ export default function submit() {
         $('#submit').next().text('Sending...');
       },
       success: (res) => {
+        console.log('success');
+        console.log(res);
         $('#recall').find('input').val('');
         $('#submit').next().html(res);
       },
