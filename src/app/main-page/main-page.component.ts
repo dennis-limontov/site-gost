@@ -1,14 +1,14 @@
-import { Component, OnInit, HostListener } from "@angular/core";
+import { Component, OnInit, HostListener } from '@angular/core';
 
-import toggleElem from "./animation.js";
-import buttonUp from "./button-up.js";
-import rt from "./rotating-text.js";
-import mp from "./magnified-pictures.js";
+import toggleElem from './animation.js';
+import buttonUp from './button-up.js';
+import rt from './rotating-text.js';
+import mp from './magnified-pictures.js';
 
 @Component({
-  selector: "app-main-page",
-  templateUrl: "./main-page.component.html",
-  styleUrls: [ "./main-page.component.css" ]
+  selector: 'app-main-page',
+  templateUrl: './main-page.component.html',
+  styleUrls: [ './main-page.component.css' ]
 })
 export class MainPageComponent implements OnInit {
   constructor() {}
@@ -140,7 +140,7 @@ export class MainPageComponent implements OnInit {
       buttonText: 'Увеличить',
       img: '../../../assets/img/houses/agricultural/house-agr-008-min.jpg'
     },
-    
+
     // social
     {
       title: 'Ветка',
@@ -235,7 +235,7 @@ export class MainPageComponent implements OnInit {
   ];
   slides: any = [[]];
   chunk(arr, chunkSize) {
-    let R = [];
+    const R = [];
     for (let i = 0, len = arr.length; i < len; i += chunkSize) {
       R.push(arr.slice(i, i + chunkSize));
     }
@@ -255,12 +255,13 @@ export class MainPageComponent implements OnInit {
 
     toggleElem();
     buttonUp();
-    rt();
+    setTimeout(rt, 0);
+    // rt();
     mp();
   }
 
   @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
+  onResize() {
     this.defineCards();
   }
 }
