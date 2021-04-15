@@ -1,6 +1,7 @@
 {
   "header": {
     "main": "Галоўная",
+    "info": "Інфа-цэнтр",
     "services": "Паслугі",
     "goods": "Тавары",
     "portfolio": "Партфоліо",
@@ -11,6 +12,9 @@
       "common_work": "Агульнабуд. працы",
       "certificates": "Сертыфікаты"
     }
+  },
+  "info": {
+    "certificates": "Сертыфікаты"
   },
   "main-page": {
     "main-text-1": "БУДУЕМ З РОЗУМАМ",

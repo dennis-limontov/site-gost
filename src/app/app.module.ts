@@ -6,6 +6,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { InfoComponent } from './menu/info/info.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { ContactsComponent } from './menu/contacts/contacts.component';
 import { GoodsComponent } from './menu/goods/goods.component';
@@ -28,6 +29,11 @@ const appRoutes: Routes = [
     path: 'contacts',
     pathMatch: 'full',
     component: ContactsComponent,
+  },
+  {
+    path: 'info',
+    pathMatch: 'full',
+    component: InfoComponent,
   },
   {
     path: 'goods',
@@ -68,6 +74,7 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    InfoComponent,
     MainPageComponent,
     GoodsComponent,
     ContactsComponent,

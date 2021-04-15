@@ -31,11 +31,16 @@
           <a class="nav-link" routerLink="">{{ t('header.main') }}</a>
         </li>
         <li class="nav-item active">
+          <a class="nav-link" routerLink="/info">{{t('header.info')}}</a>
+          <div class="list list-info">
+            <a ng-click="scrollTo('CE')" routerLink="/info">{{ t('info.certificates') }}</a>
+          </div>
+        </li>
+        <li class="nav-item active">
           <a class="nav-link" routerLink="/services">{{ t('header.services') }}</a>
           <div class="list list-services" ng-controller="MainCtrl">
             <a ng-click="scrollTo('SR')" routerLink="/services">{{ t('services.special-work.caption') }}</a>
             <a ng-click="scrollTo('OR')" routerLink="/services">{{ t('services.common-work.caption') }}</a>
-            <a ng-click="scrollTo('CE')" routerLink="/services">{{ t('header.submenu.certificates') }}</a>
           </div>
         </li>
         <li class="nav-item active">
@@ -51,9 +56,9 @@
         <li class="nav-item active">
           <a class="nav-link" routerLink="/contacts">{{ t('header.contacts') }}</a>
         </li>
-        <li class="nav-item active">
+        <!-- <li class="nav-item active">
           <a class="nav-link" routerLink="/recall">{{t('header.recall')}}</a>
-        </li>
+        </li> -->
       </ul>
     </nav>
   </div>

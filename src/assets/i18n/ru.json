@@ -1,6 +1,7 @@
 {
   "header": {
     "main": "Главная",
+    "info": "Инфо-центр",
     "services": "Услуги",
     "goods": "Товары",
     "portfolio": "Портфолио",
@@ -13,6 +14,9 @@
       "own_production": "Собственное производство",
       "illiquid": "Неликвиды"
     }
+  },
+  "info": {
+    "certificates": "Сертификаты"
   },
   "main-page": {
     "main-text-1": "СТРОИМ С УМОМ",
@@ -33,6 +37,7 @@
     "video": "ВИДЕОИНФОРМАЦИЯ",
     "news": "НОВОСТИ"
   },
+  
   "services": {
     "special-work": {
       "caption": "Специальные работы",

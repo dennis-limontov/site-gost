@@ -1,0 +1,56 @@
+.certificates {
+    line-height: 2.5em!important;
+    margin: 30px 10px 30px -10px;
+}
+.certificates a {
+    color: black!important;
+}
+.certificates ul li {
+    list-style-type: none;
+}
+.certificates ul li:before,
+.services-text ul li:before,
+.services-text ul li ul li:before {
+    color: green;
+    content: "\2022";
+    font-size: 25pt;
+    padding-right: 30px;
+    vertical-align: sub;
+}
+
+.certificates-text {
+    color: black;
+    margin: -10px 0 0 5px;
+}
+
+.info {
+    background-color: white;
+    min-height: 100vh;
+}
+
+.info-body {
+    margin: 0 80px;
+    opacity: 0.95;
+}
+
+.info-caption {
+    color: #3F3F3F;
+    text-align: center;
+    padding: 40px;
+}
+
+.info-space {
+    height: 50px;
+}
+
+.info-undercaption {
+    font-size: 14pt;
+    line-height: 2em;
+}
+.info-undercaption a {
+    color: white;
+    text-decoration: none;
+}
+.info-undercaption ul li {
+    padding-left: 15px;
+}
