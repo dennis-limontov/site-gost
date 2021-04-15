@@ -6,148 +6,113 @@
 </head>
 
 <body class="services" ng-app="anchorScrollExample">
-  <div class="services-body">
+  <div class="services-body" *transloco="let t">
     <div class="services-caption" id="SR">
       <h1>
-        <b>Специальные работы</b>
+        <b>{{ t('services.special-work.caption') }}</b>
       </h1>
     </div>
     <div class="services-text">
       <div class="services-undercaption">
         <ul>
-          <li>
-            Электромонтажные работы (устройство сетей и систем электроснабжения,
-            электроосвещения)
-          </li>
-          <li>
-            Системы связи и диспетчеризации инженерного оборудования жилых и
-            общественных зданий
-          </li>
-          <li>
-            Устройство слаботочных сетей и систем
-          </li>
-          <li>
-            Монтаж систем автоматизации
-          </li>
-          <li>
-            Монтаж, наладка, техническое обслуживание систем автоматической
-            пожарной сигнализации, систем автоматического пожаротушения, систем
-            противодымной защиты, систем оповещения о пожаре и управления
-            эвакуацией
-          </li>
-          <li>
-            Выполнение работ с применением огнезащитных составов
-          </li>
-          <li>
-            Монтаж инженерных сетей: линейно-кабельные сооружения электросвязи
-          </li>
-          <li>
-            Монтаж пассивных оптических сетей
-          </li>
-          <li>
-            Монтаж технологического оборудования и трубопроводов
-          </li>
-          <li>
-            Монтаж внутренних инженерных систем зданий и сооружений
-            (водоснабжение, монтаж приборов учёта тепла, канализация,
-            отопление, вентиляция и кондиционирование, газоснабжение)
-          </li>
-          <li>
-            Монтаж наружных сетей и сооружений (водоснабжение, канализация,
-            тепловые сети, газоснабжение)
-          </li>
+          <li>{{ t('services.special-work.work-1') }}</li>
+          <li>{{ t('services.special-work.work-2') }}</li>
+          <li>{{ t('services.special-work.work-3') }}</li>
+          <li>{{ t('services.special-work.work-4') }}</li>
+          <li>{{ t('services.special-work.work-5') }}</li>
+          <li>{{ t('services.special-work.work-6') }}</li>
+          <li>{{ t('services.special-work.work-7') }}</li>
+          <li>{{ t('services.special-work.work-8') }}</li>
+          <li>{{ t('services.special-work.work-9') }}</li>
+          <li>{{ t('services.special-work.work-10') }}</li>
+          <li>{{ t('services.special-work.work-11') }}</li>
         </ul>
       </div>
     </div>
 
     <div class="services-caption" id="OR">
       <h1>
-        <b>Общестроительные работы</b>
+        <b>{{ t('services.common-work.caption') }}</b>
       </h1>
     </div>
     <div class="services-text">
       <div class="services-undercaption">
         <ul>
           <li>
-            Геодезические работы
+            {{ t('services.common-work.geodetic') }}
           </li>
           <li>
-            Земляные работы
+            {{ t('services.common-work.earthworks.caption') }}
             <ul>
               <li>
-                Устройство фундаментов на основаниях из естественных грунтов
+                {{ t('services.common-work.earthworks.work-1') }}
               </li>
               <li>
-                Устройство искусственных оснований и укрепление грунтов
+                {{ t('services.common-work.earthworks.work-2') }}
               </li>
               <li>
-                Устройство свайных фундаментов
+                {{ t('services.common-work.earthworks.work-3') }}
               </li>
               <li>
-                Устройство специальных видов фундаментов зданий и сооружений
+                {{ t('services.common-work.earthworks.work-4') }}
               </li>
               <li>
-                Возведение монолитных бетонных и железобетонных конструкций
+                {{ t('services.common-work.earthworks.work-5') }}
               </li>
               <li>
-                Монтаж сборных бетонных и железобетонных конструкций
+                {{ t('services.common-work.earthworks.work-6') }}
               </li>
               <li>
-                Возведение каменных и армокаменных конструкций
+                {{ t('services.common-work.earthworks.work-7') }}
               </li>
             </ul>
           </li>
           <li>
-            Сварочные работы
+            {{ t('services.common-work.welding.caption') }}
             <ul>
               <li>
-                Монтаж стальных конструкций
+                {{ t('services.common-work.welding.work-1') }}
               </li>
               <li>
-                Монтаж и устройство несущих деревянных конструкций
+                {{ t('services.common-work.welding.work-2') }}
               </li>
               <li>
-                Монтаж лёгких ограждающий конструкций
+                {{ t('services.common-work.welding.work-3') }}
               </li>
               <li>
-                Устройство антикоррозионных покрытий строительных
-                конструкций зданий и сооружений
+                {{ t('services.common-work.welding.work-4') }}
               </li>
             </ul>
           </li>
           <li>
-            Кровельные работы
+            {{ t('services.common-work.roofing') }}
           </li>
           <li>
-            Устройство изоляционных покрытий 
+            {{ t('services.common-work.insulation-coatings') }}
           </li>
           <li>
-            Устройство тепловой изоляции ограждающих конструкций зданий
-            и сооружений
+            {{ t('services.common-work.thermal-insulation') }}
           </li>
           <li>
-            Изоляционные работы (теплоизоляция трубопроводов)
+            {{ t('services.common-work.insulation-pipelines') }}
           </li>
           <li>
-            Отделочные работы (штукатурные, облицовочные, малярные,
-            обойные, стекольные)
+            {{ t('services.common-work.finishing') }}
           </li>
           <li>
-            Заполнение оконных и дверных проёмов
+            {{ t('services.common-work.filling-openings') }}
           </li>
           <li>
-            Устройство  полов
+            {{ t('services.common-work.floor') }}
           </li>
           <li>
-            Устройство дорожных покрытий пешеходных зон из плит
-            тротуарных
+            {{ t('services.common-work.paving-slabs') }}
           </li>
           <li>
-            Благоустройство территорий, озеленение
+            {{ t('services.common-work.landscaping') }}
           </li>
           <li>
-            Устройство улиц и дорог городов, посёлков и сельских
-            населённых пунктов
+            {{ t('services.common-work.street-roads') }}
           </li>
         </ul>
       </div>

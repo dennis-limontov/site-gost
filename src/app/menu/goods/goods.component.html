@@ -9,10 +9,10 @@
   <div class="goods">
     <div class="goods-space"></div>
   
-    <div class="goods-body">
+    <div class="goods-body" *transloco="let t">
       <div class="goods-caption" id="SP">
         <h1>
-          <b>Собственное производство</b>
+          <b>{{ t('goods.own-production') }}</b>
         </h1>
       </div>
       <div class="goods-text">
@@ -23,7 +23,7 @@
   
       <div class="goods-caption" id="NL">
         <h1>
-          <b>Неликвиды</b>
+          <b>{{ t('goods.illiquid') }}</b>
         </h1>
       </div>
       <div class="goods-text">

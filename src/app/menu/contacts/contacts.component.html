@@ -14,38 +14,38 @@
 </head>
 
 <body>
-  <table>
+  <table *transloco="let t">
     <tr class="contact-name">
-      <td colspan="2">ОАО "Гомельский объединённый строительный трест"</td>
+      <td colspan="2">{{ t('contacts.company.main') }}</td>
     </tr>
     <tr class="contact-name hidden">
-      <td colspan="2">ПМК-4 ОАО "Гомельский объединённый строительный трест"</td>
+      <td colspan="2">{{ t('contacts.company.pmk-4') }}</td>
     </tr>
     <tr class="contact-name hidden">
-      <td colspan="2">ПМК-5 ОАО "Гомельский объединённый строительный трест"</td>
+      <td colspan="2">{{ t('contacts.company.pmk-5') }}</td>
     </tr>
     <tr class="contact-name hidden">
-      <td colspan="2">ПМК-16 ОАО "Гомельский объединённый строительный трест"</td>
+      <td colspan="2">{{ t('contacts.company.pmk-16') }}"</td>
     </tr>
     <tr class="contact-name hidden">
-      <td colspan="2">ПМК-43 ОАО "Гомельский объединённый строительный трест"</td>
+      <td colspan="2">{{ t('contacts.company.pmk-43') }}</td>
     </tr>
     <tr class="contact-name hidden">
-      <td colspan="2">ПМК-76 ОАО "Гомельский объединённый строительный трест"</td>
+      <td colspan="2">{{ t('contacts.company.pmk-76') }}</td>
     </tr>
     <tr class="contact-name hidden">
-      <td colspan="2">УП ЖСК ОАО "Гомельский объединённый строительный трест"</td>
+      <td colspan="2">{{ t('contacts.company.jsk') }}</td>
     </tr>
 
     <tr>
       <td class="buttons">
-        <button on-click="showCurrentContact($event)" class="current">ОАО "ГОСТ"</button>
-        <button on-click="showCurrentContact($event)">ПМК-4 ОАО "ГОСТ"</button>
-        <button on-click="showCurrentContact($event)">ПМК-5 ОАО "ГОСТ"</button>
-        <button on-click="showCurrentContact($event)">ПМК-16 ОАО "ГОСТ"</button>
-        <button on-click="showCurrentContact($event)">ПМК-43 ОАО "ГОСТ"</button>
-        <button on-click="showCurrentContact($event)">ПМК-76 ОАО "ГОСТ"</button>
-        <button on-click="showCurrentContact($event)">УП ЖСК ОАО "ГОСТ"</button>
+        <button on-click="showCurrentContact($event)" class="current">{{ t('contacts.company.main-short') }}</button>
+        <button on-click="showCurrentContact($event)">{{ t('contacts.company.pmk-4-short') }}</button>
+        <button on-click="showCurrentContact($event)">{{ t('contacts.company.pmk-5-short') }}</button>
+        <button on-click="showCurrentContact($event)">{{ t('contacts.company.pmk-16-short') }}</button>
+        <button on-click="showCurrentContact($event)">{{ t('contacts.company.pmk-43-short') }}</button>
+        <button on-click="showCurrentContact($event)">{{ t('contacts.company.pmk-76-short') }}</button>
+        <button on-click="showCurrentContact($event)">{{ t('contacts.company.jsk-short') }}</button>
       </td>
 
       <td>
@@ -55,7 +55,7 @@
             <td class="contact row no-gutters">
               <div class="contact-info offset-xl-2 col-xl-3 offset-lg-2 col-lg-3 offset-md-5 col-md-3 offset-sm-2 col-sm-6">
                 <div>
-                  <div class="info">Контакты</div>
+                  <div class="info">{{ t('contacts.data-1') }}</div>
                   <br />
                   <div class="info-text">
                     8 0232 233311
@@ -69,23 +69,23 @@
                 </div>
 
                 <div>
-                  <div class="info">Реквизиты</div>
+                  <div class="info">{{ t('contacts.data-2') }}</div>
                   <br />
                   <div>
                     УНП 400022439<br />
-                    246028, Гомельская обл.,<br />
-                    г. Гомель, ул. Советская, д. 126
+                    {{ t('contacts.data.main-1') }}<br />
+                    {{ t('contacts.data.main-2') }}
                   </div>
                   <br />
                 </div>
 
                 <div>
-                  <div class="info">Время работы</div>
+                  <div class="info">{{ t('contacts.data-3') }}</div>
                   <br />
                   <div>
-                    пн-пт: 8:00 – 17:00<br />
-                    обед: 12:00 – 13:00<br />
-                    сб-вс: выходной
+                    {{ t('contacts.data.main-3') }}<br />
+                    {{ t('contacts.data.main-4') }}<br />
+                    {{ t('contacts.data.main-5') }}
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@
             <td class="contact hidden row no-gutters">
               <div class="contact-info offset-xl-2 col-xl-3 offset-lg-2 col-lg-3 offset-md-5 col-md-3 offset-sm-2 col-sm-6">
                 <div>
-                  <div class="info">Контакты</div>
+                  <div class="info">{{ t('contacts.data-1') }}</div>
                   <br />
                   <div class="info-text">
                     8 02350 21079
@@ -118,13 +118,13 @@
                 </div>
 
                 <div>
-                  <div class="info">Реквизиты</div>
+                  <div class="info">{{ t('contacts.data-2') }}</div>
                   <br />
                   <div>
                     УНП 400031327<br />
-                    274920, Гомельская обл.,<br />
-                    Петриковский р-н, Копаткевичский с/с,<br />
-                    гп Копаткевичи, пер. Мелиоративный, д. 4
+                    {{ t('contacts.data.pmk-4-1') }}<br />
+                    {{ t('contacts.data.pmk-4-2') }}<br />
+                    {{ t('contacts.data.pmk-4-3') }}
                   </div>
                 </div>
 
@@ -144,7 +144,7 @@
             <td class="contact hidden row no-gutters">
               <div class="contact-info offset-xl-2 col-xl-3 offset-lg-2 col-lg-3 offset-md-5 col-md-3 offset-sm-2 col-sm-6">
                 <div>
-                  <div class="info">Контакты</div>
+                  <div class="info">{{ t('contacts.data-1') }}</div>
                   <br />
                   <div class="info-text">
                     8 02333 56928
@@ -162,12 +162,12 @@
                 </div>
 
                 <div>
-                  <div class="info">Реквизиты</div>
+                  <div class="info">{{ t('contacts.data-2') }}</div>
                   <br />
                   <div>
                     УНП 401163570<br />
-                    247050, Гомельская обл.,<br />
-                    г. Добруш, пер. Крылова, д. 4
+                    {{ t('contacts.data.pmk-5-1') }}<br />
+                    {{ t('contacts.data.pmk-5-2') }}
                   </div>
                 </div>
               </div>
@@ -187,7 +187,7 @@
             <td class="contact hidden row no-gutters">
               <div class="contact-info offset-xl-2 col-xl-3 offset-lg-2 col-lg-3 offset-md-5 col-md-3 offset-sm-2 col-sm-6">
                 <div>
-                  <div class="info">Контакты</div>
+                  <div class="info">{{ t('contacts.data-1') }}</div>
                   <br />
                   <div class="info-text">
                     8 0232 214490
@@ -205,12 +205,12 @@
                 </div>
 
                 <div>
-                  <div class="info">Реквизиты</div>
+                  <div class="info">{{ t('contacts.data-2') }}</div>
                   <br />
                   <div>
                     УНП 400237992<br />
-                    246010, г. Гомель,<br />
-                    ул. Могилевская, д. 23
+                    {{ t('contacts.data.pmk-16-1') }}<br />
+                    {{ t('contacts.data.pmk-16-2') }}
                   </div>
                 </div>
               </div>
@@ -230,7 +230,7 @@
             <td class="contact hidden row no-gutters">
               <div class="contact-info offset-xl-2 col-xl-3 offset-lg-2 col-lg-3 offset-md-5 col-md-3 offset-sm-2 col-sm-6">
                 <div>
-                  <div class="info">Контакты</div>
+                  <div class="info">{{ t('contacts.data-1') }}</div>
                   <br />
                   <div class="info-text">
                     8 02345 54387
@@ -248,12 +248,12 @@
                 </div>
 
                 <div>
-                  <div class="info">Реквизиты</div>
+                  <div class="info">{{ t('contacts.data-2') }}</div>
                   <br />
                   <div>
                     УНП 401149654<br />
-                    247710, Гомельская обл.,<br />
-                    г. Калинковичи, ул. Островского, д. 36
+                    {{ t('contacts.data.pmk-43-1') }}<br />
+                    {{ t('contacts.data.pmk-43-2') }}
                   </div>
                 </div>
               </div>
@@ -273,7 +273,7 @@
             <td class="contact hidden row no-gutters">
               <div class="contact-info offset-xl-2 col-xl-3 offset-lg-2 col-lg-3 offset-md-5 col-md-3 offset-sm-2 col-sm-6">
                 <div>
-                  <div class="info">Контакты</div>
+                  <div class="info">{{ t('contacts.data-1') }}</div>
                   <br />
                   <div class="info-text">
                     8 02353 33293
@@ -291,12 +291,12 @@
                 </div>
 
                 <div>
-                  <div class="info">Реквизиты</div>
+                  <div class="info">{{ t('contacts.data-2') }}</div>
                   <br />
                   <div>
                     УНП 400050033<br />
-                    247960, Гомельская обл.,<br />
-                    г. Житковичи, ул. Октябрьская, д. 57
+                    {{ t('contacts.data.pmk-76-1') }}<br />
+                    {{ t('contacts.data.pmk-76-2') }}
                   </div>
                 </div>
               </div>
@@ -316,7 +316,7 @@
             <td class="contact hidden row no-gutters">
               <div class="contact-info offset-xl-2 col-xl-3 offset-lg-2 col-lg-3 offset-md-5 col-md-3 offset-sm-2 col-sm-6">
                 <div>
-                  <div class="info">Контакты</div>
+                  <div class="info">{{ t('contacts.data-1') }}</div>
                   <br />
                   <div class="info-text">
                     jsk@gost.gomel.by
@@ -326,12 +326,12 @@
                 </div>
 
                 <div>
-                  <div class="info">Реквизиты</div>
+                  <div class="info">{{ t('contacts.data-2') }}</div>
                   <br />
                   <div>
                     УНП 400022439<br />
-                    246028, Гомельская обл.,<br />
-                    г. Гомель, ул. Советская, д. 126
+                    {{ t('contacts.data.jsk-1') }}<br />
+                    {{ t('contacts.data.jsk-2') }}
                   </div>
                 </div>
               </div>
@@ -354,18 +354,18 @@
       <td colspan="2">
         <details on-toggle="scrollToTable($event)">
           <summary class="col-lg-5">
-            ВСЕ КОНТАКТЫ
+            {{ t('contacts.data-4') }}
           </summary>
           <div class="pre-table">
             <table class="table table-bordered table-hover table-striped">
               <thead>
                 <tr>
-                  <th>Должность</th>
-                  <th>ФИО</th>
+                  <th>{{ t('contacts.table.caption-1') }}</th>
+                  <th>{{ t('contacts.table.caption-2') }}</th>
                   <th>
                     <i class="fa fa-phone mr-3"></i>
                     &nbsp;
-                    <span>телефон</span>
+                    <span>{{ t('contacts.table.caption-3') }}</span>
                   </th>
                   <!-- <th>
                     <span class="material-icons">
@@ -409,7 +409,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">Специалист по кадрам, юрист</td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-1') }}</td>
                 </tr>
                 <tr>
                   <td>ведущий спец. по кадрам</td>
@@ -428,7 +428,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">Планово-экономическое бюро</td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-2') }}</td>
                 </tr>
                 <tr>
                   <td>начальник</td>
@@ -447,7 +447,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">Отдел по снабжению</td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-3') }}</td>
                 </tr>
                 <tr>
                   <td>начальник</td>
@@ -476,7 +476,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">Бухгалтерия</td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-4') }}</td>
                 </tr>
                 <tr>
                   <td>главный бухгалтер</td>
@@ -500,9 +500,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">
-                    Производственно-технический отдел
-                  </td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-5') }}</td>
                 </tr>
                 <tr>
                   <td>начальник</td>
@@ -526,7 +524,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">Сектор менеджмента качества</td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-6') }}</td>
                 </tr>
                 <tr>
                   <td>ведущий инженер по качеству</td>
@@ -550,7 +548,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">Главный механик</td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-7') }}</td>
                 </tr>
                 <tr>
                   <td>главный механик</td>
@@ -559,9 +557,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">
-                    Отдел по тендерам и договорной работе
-                  </td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-8') }}</td>
                 </tr>
                 <tr>
                   <td>начальник</td>
@@ -585,7 +581,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">Участок специальных работ</td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-9') }}</td>
                 </tr>
                 <tr>
                   <td>начальник</td>
@@ -609,9 +605,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">
-                    Участок электромонтажных работ
-                  </td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-10') }}</td>
                 </tr>
                 <tr>
                   <td>начальник</td>
@@ -635,7 +629,7 @@
                 </tr>
 
                 <tr>
-                  <td colspan="3" class="department">Руководитель проекта</td>
+                  <td colspan="3" class="department">{{ t('contacts.table.department-11') }}</td>
                 </tr>
                 <tr>
                   <td>руководитель проекта</td>
@@ -653,18 +647,18 @@
       <td colspan="2">
         <details on-toggle="scrollToTable($event)">
           <summary class="col-lg-5">
-            ВСЕ КОНТАКТЫ
+            {{ t('contacts.data-4') }}
           </summary>
           <div class="pre-table">
             <table class="table table-bordered table-hover table-striped">
               <thead>
                 <tr>
-                  <th>Должность</th>
-                  <th>ФИО</th>
+                  <th>{{ t('contacts.table.caption-1') }}</th>
+                  <th>{{ t('contacts.table.caption-2') }}</th>
                   <th>
                     <i class="fa fa-phone mr-3"></i>
                     &nbsp;
-                    <span>телефон</span>
+                    <span>{{ t('contacts.table.caption-3') }}</span>
                   </th>
                   <!-- <th>
                     <span class="material-icons">
@@ -762,18 +756,18 @@
       <td colspan="2">
         <details on-toggle="scrollToTable($event)">
           <summary class="col-lg-5">
-            ВСЕ КОНТАКТЫ
+            {{ t('contacts.data-4') }}
           </summary>
           <div class="pre-table">
             <table class="table table-bordered table-hover table-striped">
               <thead>
                 <tr>
-                  <th>Должность</th>
-                  <th>ФИО</th>
+                  <th>{{ t('contacts.table.caption-1') }}</th>
+                  <th>{{ t('contacts.table.caption-2') }}</th>
                   <th>
                     <i class="fa fa-phone mr-3"></i>
                     &nbsp;
-                    <span>телефон</span>
+                    <span>{{ t('contacts.table.caption-3') }}</span>
                   </th>
                   <!-- <th>
                     <span class="material-icons">
@@ -901,18 +895,18 @@
       <td colspan="2">
         <details on-toggle="scrollToTable($event)">
           <summary class="col-lg-5">
-            ВСЕ КОНТАКТЫ
+            {{ t('contacts.data-4') }}
           </summary>
           <div class="pre-table">
             <table class="table table-bordered table-hover table-striped">
               <thead>
                 <tr>
-                  <th>Должность</th>
-                  <th>ФИО</th>
+                  <th>{{ t('contacts.table.caption-1') }}</th>
+                  <th>{{ t('contacts.table.caption-2') }}</th>
                   <th>
                     <i class="fa fa-phone mr-3"></i>
                     &nbsp;
-                    <span>телефон</span>
+                    <span>{{ t('contacts.table.caption-3') }}</span>
                   </th>
                   <!-- <th>
                     <span class="material-icons">
@@ -990,18 +984,18 @@
       <td colspan="2">
         <details on-toggle="scrollToTable($event)">
           <summary class="col-lg-5">
-            ВСЕ КОНТАКТЫ
+            {{ t('contacts.data-4') }}
           </summary>
           <div class="pre-table">
             <table class="table table-bordered table-hover table-striped">
               <thead>
                 <tr>
-                  <th>Должность</th>
-                  <th>ФИО</th>
+                  <th>{{ t('contacts.table.caption-1') }}</th>
+                  <th>{{ t('contacts.table.caption-2') }}</th>
                   <th>
                     <i class="fa fa-phone mr-3"></i>
                     &nbsp;
-                    <span>телефон</span>
+                    <span>{{ t('contacts.table.caption-3') }}</span>
                   </th>
                   <!-- <th>
                     <span class="material-icons">
@@ -1109,18 +1103,18 @@
       <td colspan="2">
         <details on-toggle="scrollToTable($event)">
           <summary class="col-lg-5">
-            ВСЕ КОНТАКТЫ
+            {{ t('contacts.data-4') }}
           </summary>
           <div class="pre-table">
             <table class="table table-bordered table-hover table-striped">
               <thead>
                 <tr>
-                  <th>Должность</th>
-                  <th>ФИО</th>
+                  <th>{{ t('contacts.table.caption-1') }}</th>
+                  <th>{{ t('contacts.table.caption-2') }}</th>
                   <th>
                     <i class="fa fa-phone mr-3"></i>
                     &nbsp;
-                    <span>телефон</span>
+                    <span>{{ t('contacts.table.caption-3') }}</span>
                   </th>
                   <!-- <th>
                     <span class="material-icons">
@@ -1207,18 +1201,18 @@
       <td colspan="2">
         <details on-toggle="scrollToTable($event)">
           <summary class="col-lg-5">
-            ВСЕ КОНТАКТЫ
+            {{ t('contacts.data-4') }}
           </summary>
           <div class="pre-table">
             <table class="table table-bordered table-hover table-striped">
               <thead>
                 <tr>
-                  <th>Должность</th>
-                  <th>ФИО</th>
+                  <th>{{ t('contacts.table.caption-1') }}</th>
+                  <th>{{ t('contacts.table.caption-2') }}</th>
                   <th>
                     <i class="fa fa-phone mr-3"></i>
                     &nbsp;
-                    <span>телефон</span>
+                    <span>{{ t('contacts.table.caption-3') }}</span>
                   </th>
                   <!-- <th>
                     <span class="material-icons">
