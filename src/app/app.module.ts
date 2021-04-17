@@ -1,3 +1,4 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -14,6 +15,7 @@ import { ServicesComponent } from './menu/services/services.component';
 import { PortfolioComponent } from './menu/portfolio/portfolio.component';
 import { RecallComponent } from "./menu/recall/recall.component";
 
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { OwlModule } from 'ngx-owl-carousel';
 import { ButtonUpComponent } from './components/button-up/button-up.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -63,7 +65,9 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
+    CarouselModule,
     OwlModule,
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(appRoutes),
