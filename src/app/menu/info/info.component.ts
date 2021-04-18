@@ -14,12 +14,12 @@ export class InfoComponent implements OnInit {
   
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
+    mouseDrag: true,
     touchDrag: false,
     pullDrag: false,
-    dots: false,
-    navSpeed: 700,
-    navText: ['', ''],
+    dots: true,
+    navSpeed: 400,
+    navText: ['<', '>'],
     responsive: {
       0: {
         items: 1
@@ -34,6 +34,9 @@ export class InfoComponent implements OnInit {
         items: 4
       }
     },
-    nav: true
+    nav: true,
+    margin: 25,
+    autoplay: true,
+    autoplayTimeout: 2500
   }
 }

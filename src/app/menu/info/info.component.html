@@ -13,59 +13,44 @@
       </h1>
     </div>
 
-    <div>Some tags before</div>
     <owl-carousel-o [options]="customOptions">
-      <ng-container *ngFor="let slide of slidesStore">
-        <ng-template carouselSlide [id]="slide1">
-          <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
-        </ng-template>
-      </ng-container>
+      <ng-template carouselSlide>
+        <a href="../../../assets/pdf/certificates/sert-001.pdf">
+          <img src="../../../assets/pdf/certificates/mini/001.PNG">
+        </a>
+      </ng-template>
+      <ng-template carouselSlide>
+        <a href="../../../assets/pdf/certificates/sert-002.pdf">
+          <img src="../../../assets/pdf/certificates/mini/002.PNG">
+        </a>
+      </ng-template>
+      <ng-template carouselSlide>
+        <a href="../../../assets/pdf/certificates/sert-003.pdf">
+          <img src="../../../assets/pdf/certificates/mini/003.PNG">
+        </a>
+      </ng-template>
+      <ng-template carouselSlide>
+        <a href="../../../assets/pdf/certificates/sert-004.pdf">
+          <img src="../../../assets/pdf/certificates/mini/004.PNG">
+        </a>
+      </ng-template>
+      <ng-template carouselSlide>
+        <a href="../../../assets/pdf/certificates/sert-005.pdf">
+          <img src="../../../assets/pdf/certificates/mini/005.PNG">
+        </a>
+      </ng-template>
+      <ng-template carouselSlide>
+        <a href="../../../assets/pdf/certificates/sert-006.pdf">
+          <img src="../../../assets/pdf/certificates/mini/006.PNG">
+        </a>
+      </ng-template>
+      <ng-template carouselSlide>
+        <a href="../../../assets/pdf/certificates/sert-007.pdf">
+          <img src="../../../assets/pdf/certificates/mini/007.PNG">
+        </a>
+      </ng-template>
     </owl-carousel-o>
-    <div>Some tags after</div>
 
-    <div class="certificates-text">
-      <div class="info-undercaption certificates">
-        <ul>
-          <li>
-            <a href="../../../assets/pdf/certificates/sert-001.pdf">
-              Аттестат соответствия №0003850-ГС
-            </a>
-          </li>
-          <li>
-            <a href="../../../assets/pdf/certificates/sert-002.pdf">
-              Аттестат соответствия №0009016-СТ
-            </a>
-          </li>
-          <li>
-            <a href="../../../assets/pdf/certificates/sert-003.pdf">
-              Лицензия МЧС
-            </a>
-          </li>
-          <li>
-            <a href="../../../assets/pdf/certificates/sert-004.pdf">
-              Свидетельство о техкомпетентности 2020-2025
-            </a>
-          </li>
-          <li>
-            <a href="../../../assets/pdf/certificates/sert-005.pdf">
-              Свидетельство об оценке сварочного производства
-            </a> 
-          </li>
-          <li>
-            <a href="../../../assets/pdf/certificates/sert-006.pdf">
-              Сертификат СУОТ
-            </a>
-          </li>
-          <li>
-            <a href="../../../assets/pdf/certificates/sert-007.pdf">
-              Сертификат ISO Холдинг
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  
     <div class="info-space"></div>
   </div>
-  
 </body>
