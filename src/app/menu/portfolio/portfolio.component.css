@@ -7,28 +7,24 @@
 }
 
 .gallery-text-first {
-  color: white;
+  color: black;
   font-size: 12pt;
   margin-top: 5px;
 }
 
 .gallery-text-second {
-  color: white;
+  color: black;
   font-size: 10pt;
   margin-top: -10px;
 }
 
 .portfolio {
-  background-image: url(assets\img\portfolio-min.jpg);
-  background-size: cover;
-  -moz-background-size: cover; /* Firefox 3.6+ */
-  -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
-  -o-background-size: cover; /* Opera 9.6+ */
+  background: white;
   min-height: 100vh;
 }
 
 .portfolio-body {
-  background-color: #009236;
+  border: 2px solid darkgreen;
   margin: 0 80px;
   opacity: 1;
 }
