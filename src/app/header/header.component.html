@@ -1,21 +1,24 @@
 <header ng-app="anchorScrollExample">
   <div class="header-first">
     <nav class="navbar bg-light justify-content-center">
-      <div class="col-xs-6 col-sm-6 col-md-5 col-lg-5 mx-auto mb-4">
+      <div class="col-xs-6 col-sm-4 col-md-5 col-lg-5 mx-auto mb-4">
         <i class="fa fa-phone mr-3"></i>
         <a href="tel: +375232233311" title="телефон">8 0232 23-33-11</a>
       </div>
 
-      <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 mx-auto mb-4 logo">
+      <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 mx-auto mb-4 logo">
         <img src="../../assets/img/logo-2-min.png" />
       </div>
 
-      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 mb-4 header-fax with-locale">
-        <div class="mx-auto">
+      <div class="col-xs-12 col-sm-4 col-md-5 col-lg-5 mb-4 with-locale">
+        <div class="header-fax mx-auto">
           <i class="fa fa-print mr-3"></i>
           <span title="факс">8 0232 20-85-63</span>
         </div>
         <div>
+          <a id="specialButton" href="#"><img src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" /></a>
+        </div>
+        <div class="ruby">
           <a on-click="changeLocale({ event: $event, locale: 'ru' })" id="locale-ru" class="locale">RU</a>
           /
           <a on-click="changeLocale({ event: $event, locale: 'be' })" id="locale-by" class="locale">BY</a>

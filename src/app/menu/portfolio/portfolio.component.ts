@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import './smartphoto-1';
+import sp from "./smartphoto-1";
+import "smartphoto";
 
 @Component({
   selector: "app-portfolio",
@@ -9,5 +10,7 @@ import './smartphoto-1';
 export class PortfolioComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    sp();
+  }
 }

@@ -35,6 +35,15 @@
     color: #03cc1e;
 }
 
+.ruby {
+    min-width: 55px;
+}
+
+#specialButton img {
+    padding: 0 10px;
+    width: 70%;
+}
+
 /* header-second */
 
 .bg-dark {
@@ -120,9 +129,21 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .header-fax {
-        display: none;
+@media screen and (max-width: 992px) {
+    .list a {
+        padding: 9px 12px;
+    }
+
+    .list-goods {
+        margin: 0px 0 0 60px;
+    }
+    
+    .list-info {
+        margin: 0px 0 0 88px;
+    }
+    
+    .list-services {
+        margin: 0px 0 0 55px;
     }
 
     .navbar {
@@ -131,6 +152,15 @@
 
     .nav-item {
         padding: 0 15px;
+    }
+    .nav-item:hover {
+        display: inline-flex;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .header-fax {
+        display: none;
     }
 }
 
@@ -145,16 +175,6 @@
 
     .list a:hover {
         padding: 8px 10px;
-    }
-
-    .list-goods {
-        right: 35px;
-        top: 44px;
-    }
-
-    .list-services {
-        right: 100px;
-        top: 45px;
     }
 }
 
