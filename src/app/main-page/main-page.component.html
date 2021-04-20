@@ -4,14 +4,14 @@
 <script src="jquery.auto-text-rotating.js"></script>
 
 <main role="main">
-  <section class="main-view" *transloco="let t">
-    <div class="logo-new">
+  <section class="main-view" *transloco="let t" itemscope itemtype="http://schema.org/Organization">
+    <div class="logo-new" itemprop="logo">
       <img src="../../assets/img/logo-new-min.png">
     </div>
 
     <div class="main-view-text">
       <h2>{{ t('main-page.main-text-1') }}</h2>
-      <h1>{{ t('main-page.main-text-2') }}</h1>
+      <h1 itemprop="name">{{ t('main-page.main-text-2') }}</h1>
     </div>
   </section>
 
@@ -80,9 +80,12 @@
     </div>
   </div>
 
-  <div class="main-video" *transloco="let t">
+  <div class="main-video" *transloco="let t" itemscope itemtype="http://schema.org/VideoObject">
     <div class="main-slogan main-slogan-white">{{ t('main-page.video') }}</div>
     <div class="main-line"></div>
+    <meta itemprop="caption" content="Видеоинформация об ОАО 'ГОСТ'" />
+    <meta itemprop="copyrightYear" content="2020" />
+    <meta itemprop="thumbnail" content="../../assets/video/gost-main-poster.jpg" />
     <video controls poster="../../assets/video/gost-main-poster.jpg">
       <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7 -->
       <source

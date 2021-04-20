@@ -53,15 +53,19 @@
           <!-- gost -->
           <tr>
             <td class="contact row no-gutters">
-              <div class="contact-info offset-xl-2 col-xl-3 offset-lg-2 col-lg-3 offset-md-5 col-md-3 offset-sm-2 col-sm-6">
+              <div class="contact-info offset-xl-2 col-xl-3 offset-lg-2 col-lg-3 offset-md-5 col-md-3 offset-sm-2 col-sm-6" itemscope itemtype="http://schema.org/Organization">
                 <div>
                   <div class="info">{{ t('contacts.data-1') }}</div>
                   <br />
                   <div class="info-text">
-                    8 0232 233311
-                    <i class="fa fa-phone mr-3"></i>
+                    <div itemprop="telephone">8 0232 233311
+                      <i class="fa fa-phone mr-3"></i><br />
+                    </div>
+                    <div itemprop="faxNumber">(02350) 21079 (202)
+                      <i class="fa fa-fax" aria-hidden="true"></i>
+                    </div>
                   </div>
-                  <div class="info-text">
+                  <div class="info-text" itemprop="email">
                     gost@gost.gomel.by
                     <i class="fas fa-at"></i>
                   </div>
@@ -72,9 +76,11 @@
                   <div class="info">{{ t('contacts.data-2') }}</div>
                   <br />
                   <div>
-                    УНП 400022439<br />
-                    {{ t('contacts.data.main-1') }}<br />
-                    {{ t('contacts.data.main-2') }}
+                    УНП <span itemprop="vatID">400022439<br /></span>
+                    <div itemprop="address">
+                      {{ t('contacts.data.main-1') }}<br />
+                      {{ t('contacts.data.main-2') }}
+                    </div>
                   </div>
                   <br />
                 </div>
