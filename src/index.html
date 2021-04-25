@@ -8,6 +8,39 @@
 <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
 <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 
+<script type='application/ld+json'> 
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Organization",
+    "name": "ОАО \"Гомельский объединённый строительный трест\"",
+    "url": "https://gost.gomel.by/",
+    "logo": "https://gost.gomel.by/assets/img/logo-2-min.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Беларусь",
+      "addressLocality": "Гомель",
+      "addressRegion": "Гомельская обл.",
+      "postalCode": "246028",
+      "streetAddress": "г. Гомель, ул. Советская, д. 126"
+    },
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 30.995150,
+          "longitude": 52.450245
+      },
+      "geoRadius": 10
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+375232233311",
+      "faxNumber": "+375232208563",
+      "email": "gost@gost.gomel.by"
+    }
+  }
+</script>
+
 <html lang="ru" ng-app="angularjs-starter">
   <head>
     <meta charset="utf-8" name="description"
@@ -17,6 +50,13 @@
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="video">
+    <meta property="og:title" content="Видеоинформация об ОАО &quot;ГОСТ&quot;">
+    <meta property="og:url" content="https://gost.gomel.by/assets/video/gost-main-2.mp4">
+    <meta property="og:image" content="https://gost.gomel.by/assets/video/gost-main-poster.jpg">
+    <meta property="article:modified_time" content="2021-04-26T10:00:00+00:00" />
   </head>
   <body style="background-color: #003513; min-width: 480px;">
     <app-root></app-root>
