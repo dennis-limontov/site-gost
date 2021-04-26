@@ -35,8 +35,9 @@
         </li>
         <li class="nav-item active">
           <a class="nav-link" routerLink="/info">{{t('header.info')}}</a>
-          <div class="list list-info">
+          <div class="list list-info" ng-controller="MainCtrl">
             <a ng-click="scrollTo('CE')" routerLink="/info">{{ t('info.certificates') }}</a>
+            <a ng-click="scrollTo('FB')" routerLink="/info">{{ t('info.feedback') }}</a>
           </div>
         </li>
         <li class="nav-item active">

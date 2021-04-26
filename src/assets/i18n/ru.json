@@ -16,7 +16,8 @@
     }
   },
   "info": {
-    "certificates": "Сертификаты"
+    "certificates": "Сертификаты",
+    "feedback": "Форма обратной связи"
   },
   "main-page": {
     "main-text-1": "СТРОИМ С УМОМ",

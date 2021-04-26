@@ -5,7 +5,7 @@
     content="Инфо-центр" />
 </head>
 
-<body class="info">
+<body class="info" ng-app="anchorScrollExample">
   <div class="info-body" *transloco="let t">  
     <div class="info-caption" id="CE">
       <h1>
@@ -57,5 +57,107 @@
     </owl-carousel-o>
 
     <div class="info-space"></div>
+
+    <div class="info-caption" id="FB">
+      <h1>
+        <b>{{ t('info.feedback') }}</b>
+      </h1>
+    </div>
+
+    <div>
+      <script type="text/javascript" src="../../../assets/wp-popup/js/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript" src="../../../assets/wp-popup/fancybox/jquery.fancybox.js"></script>
+      <script type="text/javascript" src="../../../assets/wp-popup/js/jquery.maskedinput.js"></script>
+      <script type="text/javascript">
+        jQuery(function(jQuery){
+          $("#phone").mask("+375 (99) 999-99-99");
+          $("#phone2").mask("+375 (99) 999-99-99");
+        });
+      </script>
+      
+      <div id="inline">
+        <!-- <div class="flex"> 
+          <div>Написать в telegram <a class="link3" rel="nofollow" href="https://t.me/"> @ </a><br><br></div>
+          <div>
+            <a class="linkqr" rel="nofollow" href="https://t.me/">
+              <img class="qr" src="/wp-content/wp-popup/img/qr-code-175px.png" alt="QR-telegram-developer">
+            </a>
+          </div>
+        </div> 
+      
+        <p>Форма обратной связи</p> -->
+        <form id="contact" name="contact" action="#" method="post">
+          <input type="name" id="name" name="name" class="txt" placeholder="Ваше имя:">
+          <input type="phone" id="phone" name="phone" class="txt" placeholder="Ваш телефон:">
+          <input type="email1" id="email1" name="email1" class="txt" placeholder="Ваш e-mail:"> 
+          <textarea id="msg" name="msg" class="txtarea"  placeholder="Ваше сообщение:"></textarea>
+          <button id="send">Отправить</button>
+        </form>
+      </div>
+      <!-- end post -->
+      <!-- end content -->
+      <script type="text/javascript">
+        function validateEmail1(email1) { 
+          var reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+          return reg.test(email1);
+        }
+        jQuery(document).ready(function() {
+          jQuery(".modalbox").fancybox();
+          jQuery("#contact").submit(function() { return false; });
+          jQuery("#send").on("click", function(){
+            var email1val  = $("#email1").val();
+            var namevl  = $("#name").val();
+            var phonevl  = $("#phone").val();
+            var msgval    = $("#msg").val();
+            var msglen    = msgval.length;
+            var mailvalid = validateEmail1(email1val);
+      
+            if(mailvalid == false) {
+              $("#email1").addClass("error");
+            }
+            else if(mailvalid == true){
+              $("#email1").removeClass("error");
+            }
+            if(mailvalid == false) {
+              $("#name").addClass("error");
+            }
+            else if(mailvalid == true){
+              $("#name").removeClass("error");
+            }
+            if(mailvalid == false) {
+              $("#phone").addClass("error");
+            }
+            else if(mailvalid == true){
+              $("#phone").removeClass("error");
+            }
+            if(msglen < 4) {
+              $("#msg").addClass("error");
+            }
+            else if(msglen >= 4){
+              $("#msg").removeClass("error");
+            }
+            
+            if(mailvalid == true && msglen >= 4) {
+              // если обе проверки пройдены
+              // сначала мы скрываем кнопку отправки
+              $("#send").replaceWith("<em>отправка...</em>");
+              $.ajax({
+                type: 'POST',
+                url: 'sendmessage.php',
+                data: $("#contact").serialize(),
+                success: function(data) {
+                  if(data == "true") {
+                    $("#contact").fadeOut("fast", function(){
+                      $(this).before("<p><strong>Ваше сообщение успешно отправлено!😉<br> Хорошего Вам дня :)</strong></p>");
+                      setTimeout("$.fancybox.close()", 1000);
+                    });
+                  }
+                }
+              });
+            }
+          });
+        });
+      </script>
+    </div>
   </div>
 </body>

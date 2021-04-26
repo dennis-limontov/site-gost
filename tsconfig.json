@@ -21,6 +21,6 @@
     "baseUrl": "./"
   },
   "angularCompilerOptions": {
-    "enableIvy": "ngtsc"
+    "enableIvy": false
   }
 }
