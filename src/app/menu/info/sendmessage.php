@@ -1,6 +1,6 @@
 <?php
 $sendto   = "gost@gost.gomel.by"; //where to send
-$usermail = ""; //from whom 
+$usermail = ""; //from whom
 $usermail1 = $_POST['email1'];
 $username = $_POST['name'];
 $userphone = $_POST['phone'];

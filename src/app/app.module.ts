@@ -13,7 +13,6 @@ import { ContactsComponent } from './menu/contacts/contacts.component';
 import { GoodsComponent } from './menu/goods/goods.component';
 import { ServicesComponent } from './menu/services/services.component';
 import { PortfolioComponent } from './menu/portfolio/portfolio.component';
-import { RecallComponent } from "./menu/recall/recall.component";
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { OwlModule } from 'ngx-owl-carousel';
@@ -53,11 +52,6 @@ const appRoutes: Routes = [
     component: ServicesComponent,
   },
   {
-    path: 'recall',
-    pathMatch: 'full',
-    component: RecallComponent,
-  },
-  {
     path: '**',
     redirectTo: '/',
   },
@@ -84,8 +78,7 @@ const appRoutes: Routes = [
     ContactsComponent,
     ServicesComponent,
     PortfolioComponent,
-    ButtonUpComponent,
-    RecallComponent
+    ButtonUpComponent
   ],
   providers: [],
   bootstrap: [ AppComponent ],

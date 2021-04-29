@@ -3,7 +3,7 @@ import $ from "jquery";
 export default function ({ locale }) {
   $(document).ready(function() {
     var RBStickyNav = $('.RBsticky-element').offset().top;
-    console.log(RBStickyNav);
+    //console.log(RBStickyNav);
     var stickyNav = function() {
       var scrollTop = $(window).scrollTop();
       if (scrollTop > RBStickyNav) {
