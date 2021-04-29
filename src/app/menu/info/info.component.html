@@ -6,7 +6,7 @@
 </head>
 
 <body class="info" ng-app="anchorScrollExample">
-  <div class="info-body" *transloco="let t">  
+  <div class="info-body" *transloco="let t">
     <div class="info-caption" id="CE">
       <h1>
         <b>{{ t('info.certificates') }}</b>
@@ -76,31 +76,31 @@
       </script>
 
       <div class="spoiler">
-        <details>
+        <div class="details spoiler-closed">
           <summary>{{ t('info.feedback.physical-person') }}</summary>
           <div id="inline">
             <form id="contact" name="contact" action="#" method="post">
               <input type="name" id="name" name="name" class="txt" placeholder="Ваше имя:">
               <input type="phone" id="phone" name="phone" class="txt" placeholder="Ваш телефон:">
-              <input type="email1" id="email1" name="email1" class="txt" placeholder="Ваш e-mail:"> 
+              <input type="email1" id="email1" name="email1" class="txt" placeholder="Ваш e-mail:">
               <textarea id="msg" name="msg" class="txtarea" placeholder="Ваше сообщение:"></textarea>
               <button id="send">{{ t('info.feedback.send') }}</button>
             </form>
           </div>
-        </details>
-        
-        <details>
+        </div>
+
+        <div class="details spoiler-closed">
           <summary>{{ t('info.feedback.legal-person') }}</summary>
           <div id="inline-lp">
             <form id="contact-lp" name="contact-lp" action="#" method="post">
               <input type="name" id="name-lp" name="name-lp" class="txt" placeholder="Ваше имя:">
               <input type="phone" id="phone-lp" name="phone-lp" class="txt" placeholder="Ваш телефон:">
-              <input type="email1" id="email1lp" name="email1lp" class="txt" placeholder="Ваш e-mail:"> 
+              <input type="email1" id="email1lp" name="email1lp" class="txt" placeholder="Ваш e-mail:">
               <textarea id="msg-lp" name="msg-lp" class="txtarea" placeholder="Ваше сообщение:"></textarea>
               <button id="send-lp">{{ t('info.feedback.send') }}</button>
             </form>
           </div>
-        </details>
+        </div>
       </div>
     </div>
 

@@ -22,14 +22,14 @@
 
 /* Форма обратной связи*/
 
-input.error, textarea.error { 
-	border-color: #973d3d; 
-	border-style: solid; 
-	background: #f0bebe; 
-	color: #a35959; 
+input.error, textarea.error {
+	border-color: #973d3d;
+	border-style: solid;
+	background: #f0bebe;
+	color: #a35959;
 }
-input.error:focus, textarea.error:focus { 
-	border-color: #973d3d; 
+input.error:focus, textarea.error:focus {
+	border-color: #973d3d;
 	color: #a35959;
 }
 
@@ -39,10 +39,9 @@ input.error:focus, textarea.error:focus {
     width: 100%;
     margin: 0 auto;
     background: #fff;
-    padding: 10px 20px
 }
 
-#send, #send-lp { 
+#send, #send-lp {
 	background: #d5f3b3;
 	border-radius: 3px;
 	font-family: Source Sans Pro!important;
@@ -59,14 +58,14 @@ input.error:focus, textarea.error:focus {
 	justify-content:space-between;
 }
 
-.qr { 
-	width: 130px; 
+.qr {
+	width: 130px;
 	margin: 5px 0 5px 0;
 	box-shadow: 0px 0px 10px 0px;
 
 }
 
-.txt { 
+.txt {
     display: inline-block;
     color: #676767;
     width: 100%;
@@ -78,7 +77,7 @@ input.error:focus, textarea.error:focus {
     border-radius: 4px;
 }
 
-.txtarea { 
+.txtarea {
     display: inline-block;
     width:100%;
     color: #676767;
@@ -90,9 +89,9 @@ input.error:focus, textarea.error:focus {
     height: 80px;
 }
 .txt:focus, .txtarea:focus {
-    border-style: solid; 
-    border-color: #bababa; 
-    color: #444; 
+    border-style: solid;
+    border-color: #bababa;
+    color: #444;
 }
 
 /* Форма обратной связи*/
@@ -103,10 +102,10 @@ EDIT ON
     --size: 5rem;
 }
 @keyframes rotate {
-    from { 
+    from {
         transform: rotate(0);
     }
-    to { 
+    to {
         transform: rotate(1080deg);
     }
 }
@@ -117,36 +116,49 @@ summary:focus {
     outline: none;
 }
 /* Убираем стандартный маркер Chrome */
-details summary::-webkit-details-marker {
+.details summary::-webkit-details-marker {
     display: none;
 }
 /* Убираем стандартный маркер Firefox */
-details > summary {
+.details > summary {
     list-style: none;
 }
 
 .spoiler {
-    border: 1px solid #e0e0e0;
-    padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  padding: 0 1em;
 }
-.spoiler details {
-    padding: 1em 0;
+.spoiler .details {
+  padding: 1em 0;
+  outline: none;
+  cursor: pointer;
 }
-.spoiler details + details { 
-    border-top: 1px solid #e0e0e0;
+.spoiler .details + .details {
+  border-top: 1px solid #e0e0e0;
 }
 .spoiler summary {
-    color: #003513;
-    margin: 10px 0 10px 30px;
+  color: #003513;
+  margin: 10px 0 10px 30px;
+  outline: none;
 }
-.spoiler details div {
-    overflow: hidden;
-    padding: 1em 1em 0;
+.spoiler .details > div {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  opacity: 1;
+  max-height: 20em;
+  overflow: hidden;
 }
-.spoiler details[open] div {
-    animation: spoiler 1s;
+
+.spoiler .details.spoiler-closed > div {
+  opacity: 0;
+  max-height: 0;
 }
-@keyframes spoiler {
-    0%   { max-height: 0; }
-    100% { max-height: 20em; }
+
+.details.spoiler-closed summary:before {
+  content: '\25BA'
+}
+.details summary:before {
+  content: '\25BC'
 }

@@ -1,22 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import $ from 'jquery';
+import { Component, OnInit, AfterViewChecked } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import sm from "./sendmessage.js";
-import smlp from "./sendmessage-lp.js";
+import sm from './sendmessage.js';
+import smlp from './sendmessage-lp.js';
 import { letProto } from 'rxjs-compat/operator/let';
+
+let spoilerSet = false;
 
 @Component({
   selector: 'app-info',
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.css']
 })
-export class InfoComponent implements OnInit {
+export class InfoComponent implements OnInit, AfterViewChecked {
   constructor() { }
 
-  ngOnInit() {
-    sm();
-    smlp();
-  }
-  
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
@@ -43,5 +41,23 @@ export class InfoComponent implements OnInit {
     margin: 25,
     autoplay: true,
     autoplayTimeout: 2500
+  };
+
+  ngOnInit() {
+    sm();
+    smlp();
+  }
+
+  ngAfterViewChecked() {
+    if ($('.spoiler').length > 0 && !spoilerSet) {
+      $('.spoiler .details').each((i, e) => {
+        $(e).click(({ target }) => {
+          if (target.nodeName === 'SUMMARY' || $(target).hasClass('details')) {
+            $(e).toggleClass('spoiler-closed');
+          }
+        });
+      });
+      spoilerSet = true;
+    }
   }
 }
