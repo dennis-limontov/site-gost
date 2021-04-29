@@ -144,7 +144,6 @@ summary:focus {
 .spoiler .details {
   padding: 1em 0;
   outline: none;
-  cursor: pointer;
 }
 .spoiler .details + .details {
   border-top: 1px solid #e0e0e0;
