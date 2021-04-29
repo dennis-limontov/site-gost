@@ -82,6 +82,7 @@
             <form id="contact" name="contact" action="#" method="post">
               <input type="name" id="name" name="name" class="txt" placeholder="Ваше имя:">
               <input type="phone" id="phone" name="phone" class="txt" placeholder="Ваш телефон:">
+              <input type="address" id="address" name="address" class="txt" placeholder="Ваш адрес:">
               <input type="email1" id="email1" name="email1" class="txt" placeholder="Ваш e-mail:">
               <textarea id="msg" name="msg" class="txtarea" placeholder="Ваше сообщение:"></textarea>
               <button id="send">{{ t('info.feedback.send') }}</button>
@@ -93,8 +94,10 @@
           <summary>{{ t('info.feedback.legal-person') }}</summary>
           <div id="inline-lp">
             <form id="contact-lp" name="contact-lp" action="#" method="post">
+              <input type="organization" id="organization" name="organization" class="txt" placeholder="Ваша организация:">
               <input type="name" id="name-lp" name="name-lp" class="txt" placeholder="Ваше имя:">
               <input type="phone" id="phone-lp" name="phone-lp" class="txt" placeholder="Ваш телефон:">
+              <input type="address" id="address-lp" name="address-lp" class="txt" placeholder="Ваш адрес:">
               <input type="email1" id="email1lp" name="email1lp" class="txt" placeholder="Ваш e-mail:">
               <textarea id="msg-lp" name="msg-lp" class="txtarea" placeholder="Ваше сообщение:"></textarea>
               <button id="send-lp">{{ t('info.feedback.send') }}</button>

@@ -1,9 +1,11 @@
 <?php
-$sendto   = "zeratyl_07@mail.ru" // "gost@gost.gomel.by"; //where to send
+$sendto   = "zeratyl.skordesso@gmail.com" // "gost@gost.gomel.by"; //where to send
 $usermail = "noreply@gost.gomel.by"; //from whom
 $usermail1 = $_POST['email1lp'];
+$userorg = $_POST['organization'];
 $username = $_POST['name-lp'];
 $userphone = $_POST['phone-lp'];
+$useraddress = $_POST['address-lp'];
 $content  = nl2br($_POST['msg-lp']);
 $date = date("Y-m-d H:i:s");
 //IP
@@ -23,8 +25,10 @@ $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
 // Body of the letter 
 $msg  = "<html><body style='font-family:Source Sans Pro;'>";
 $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Привет! Опять кто-то написал с сайта :)</h2>\r\n";
+$msg .= "<p><strong>Организация:</strong> ".$userorg."</p>\r\n";
 $msg .= "<p><strong>Имя:</strong> ".$username."</p>\r\n";
 $msg .= "<p><strong>Номер телефона:</strong> ".$userphone."</p>\r\n";
+$msg .= "<p><strong>Адрес:</strong> ".$useraddress."</p>\r\n";
 $msg .= "<p><strong>Почта:</strong> ".$usermail1."</p>\r\n";
 $msg .= "<p><strong>Сообщение:</strong> ".$content."</p>\r\n";
 $msg .= "<p><strong>IP клиента:</strong> ".$ip."</p>\r\n";

@@ -1,2 +1,16 @@
+User-Agent: GoogleBot
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Disallow: */?s=
+Disallow: *utm=
+
+User-Agent: Yandex
+Disallow: */?s=
+Clean-Param: utm_source&utm_medium&utm_campaign
+
 User-Agent: *
-Allow: /
+Crawl-Delay: 2
+Host: https://gost.gomel.by
+Sitemap: https://gost.gomel.by/sitemap.xml
