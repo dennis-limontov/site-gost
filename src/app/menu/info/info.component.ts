@@ -6,6 +6,7 @@ import smlp from './sendmessage-lp.js';
 import { letProto } from 'rxjs-compat/operator/let';
 
 let spoilerSet = false;
+let filePickerSet = false;
 
 @Component({
   selector: 'app-info',
@@ -58,6 +59,20 @@ export class InfoComponent implements OnInit, AfterViewChecked {
         });
       });
       spoilerSet = true;
+    }
+
+    if ($('.file-picker').length > 0 && !filePickerSet) {
+      $('.input-file').each((i, e) => {
+        $(e).on('change', () => {
+          const node = $(`#file-count-${e.id.slice(-1)}`);
+          if (e.files.length < 3) {
+            node.get(0).innerText = [...e.files].map(({name}) => name).join(', ');
+          } else {
+            node.get(0).innerText = `${e.files.length} files`;
+          }
+        });
+      });
+      filePickerSet = true;
     }
   }
 }

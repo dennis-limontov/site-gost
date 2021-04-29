@@ -85,6 +85,11 @@
               <input type="address" id="address" name="address" class="txt" placeholder="Ваш адрес:">
               <input type="email1" id="email1" name="email1" class="txt" placeholder="Ваш e-mail:">
               <textarea id="msg" name="msg" class="txtarea" placeholder="Ваше сообщение:"></textarea>
+              <div class="file-labels">
+                <label for="myfile-1" class="file-picker">Выберите файлы</label>
+                <label id="file-count-1" class="file-count"></label>
+              </div>
+              <input type="file" class="input-file" id="myfile-1" name="myfile-1" multiple/>
               <button id="send">{{ t('info.feedback.send') }}</button>
             </form>
           </div>
@@ -100,6 +105,11 @@
               <input type="address" id="address-lp" name="address-lp" class="txt" placeholder="Ваш адрес:">
               <input type="email1" id="email1lp" name="email1lp" class="txt" placeholder="Ваш e-mail:">
               <textarea id="msg-lp" name="msg-lp" class="txtarea" placeholder="Ваше сообщение:"></textarea>
+              <div class="file-labels">
+                <label for="myfile-2" class="file-picker">Выберите файлы</label>
+                <label id="file-count-2" class="file-count"></label>
+              </div>
+              <input type="file" class="input-file" id="myfile-2" name="myfile-2" multiple/>
               <button id="send-lp">{{ t('info.feedback.send') }}</button>
             </form>
           </div>
