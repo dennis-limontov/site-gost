@@ -33,7 +33,7 @@ input.error:focus, textarea.error:focus {
 	color: #a35959;
 }
 
-#inline {
+#inline, #inline-lp {
     font-family: Source Sans Pro!important;
     font-weight: 400;
     width: 100%;
@@ -42,7 +42,7 @@ input.error:focus, textarea.error:focus {
     padding: 10px 20px
 }
 
-#send { 
+#send, #send-lp { 
 	background: #d5f3b3;
 	border-radius: 3px;
 	font-family: Source Sans Pro!important;
@@ -50,7 +50,7 @@ input.error:focus, textarea.error:focus {
 	margin: -5px 0 30px 0;
 	padding: 7px;
 }
-#send:hover {
+#send:hover, #send-lp:hover {
 	background: #979797;
 }
 
@@ -109,4 +109,44 @@ EDIT ON
     to { 
         transform: rotate(1080deg);
     }
+}
+
+/* spoiler */
+
+summary:focus {
+    outline: none;
+}
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+    display: none;
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+    list-style: none;
+}
+
+.spoiler {
+    border: 1px solid #e0e0e0;
+    padding: 0 1em;
+}
+.spoiler details {
+    padding: 1em 0;
+}
+.spoiler details + details { 
+    border-top: 1px solid #e0e0e0;
+}
+.spoiler summary {
+    color: #003513;
+    margin: 10px 0 10px 30px;
+}
+.spoiler details div {
+    overflow: hidden;
+    padding: 1em 1em 0;
+}
+.spoiler details[open] div {
+    animation: spoiler 1s;
+}
+@keyframes spoiler {
+    0%   { max-height: 0; }
+    100% { max-height: 20em; }
 }

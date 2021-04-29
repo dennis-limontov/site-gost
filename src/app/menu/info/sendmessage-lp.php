@@ -1,10 +1,10 @@
 <?php
 $sendto   = "zeratyl_07@mail.ru" // "gost@gost.gomel.by"; //where to send
 $usermail = "noreply@gost.gomel.by"; //from whom
-$usermail1 = $_POST['email1'];
-$username = $_POST['name'];
-$userphone = $_POST['phone'];
-$content  = nl2br($_POST['msg']);
+$usermail1 = $_POST['email1lp'];
+$username = $_POST['name-lp'];
+$userphone = $_POST['phone-lp'];
+$content  = nl2br($_POST['msg-lp']);
 $date = date("Y-m-d H:i:s");
 //IP
 $client  = @$_SERVER['HTTP_CLIENT_IP'];

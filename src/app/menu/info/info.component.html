@@ -60,7 +60,7 @@
 
     <div class="info-caption" id="FB">
       <h1>
-        <b>{{ t('info.feedback') }}</b>
+        <b>{{ t('info.feedback.slogan') }}</b>
       </h1>
     </div>
 
@@ -74,16 +74,83 @@
           $("#phone2").mask("+375 (99) 999-99-99");
         });
       </script>
-      
-      <div id="inline">
-        <form id="contact" name="contact" action="#" method="post">
-          <input type="name" id="name" name="name" class="txt" placeholder="Ваше имя:">
-          <input type="phone" id="phone" name="phone" class="txt" placeholder="Ваш телефон:">
-          <input type="email1" id="email1" name="email1" class="txt" placeholder="Ваш e-mail:"> 
-          <textarea id="msg" name="msg" class="txtarea"  placeholder="Ваше сообщение:"></textarea>
-          <button id="send">Отправить</button>
-        </form>
+
+      <div class="spoiler">
+        <details>
+          <summary>{{ t('info.feedback.physical-person') }}</summary>
+          <div id="inline">
+            <form id="contact" name="contact" action="#" method="post">
+              <input type="name" id="name" name="name" class="txt" placeholder="Ваше имя:">
+              <input type="phone" id="phone" name="phone" class="txt" placeholder="Ваш телефон:">
+              <input type="email1" id="email1" name="email1" class="txt" placeholder="Ваш e-mail:"> 
+              <textarea id="msg" name="msg" class="txtarea" placeholder="Ваше сообщение:"></textarea>
+              <button id="send">{{ t('info.feedback.send') }}</button>
+            </form>
+          </div>
+        </details>
+        
+        <details>
+          <summary>{{ t('info.feedback.legal-person') }}</summary>
+          <div id="inline-lp">
+            <form id="contact-lp" name="contact-lp" action="#" method="post">
+              <input type="name" id="name-lp" name="name-lp" class="txt" placeholder="Ваше имя:">
+              <input type="phone" id="phone-lp" name="phone-lp" class="txt" placeholder="Ваш телефон:">
+              <input type="email1" id="email1lp" name="email1lp" class="txt" placeholder="Ваш e-mail:"> 
+              <textarea id="msg-lp" name="msg-lp" class="txtarea" placeholder="Ваше сообщение:"></textarea>
+              <button id="send-lp">{{ t('info.feedback.send') }}</button>
+            </form>
+          </div>
+        </details>
       </div>
     </div>
+
+    <div class="info-space"></div>
+
+    <div>
+      <p></p>
+      <p>{{ t('info.feedback.text-1') }}
+        <a href="https://pravo.by/document/?guid=3871&p0=H11100300">{{ t('info.feedback.text-2') }}</a></p>
+      <p></p>
+      <p>{{ t('info.feedback.text-3') }} <b>{{ t('info.feedback.text-4') }}</b></p>
+      <p></p>
+      <p><b>{{ t('info.feedback.text-5') }}</b></p>
+      <ul>
+        <li>{{ t('info.feedback.text-6') }}</li>
+        <li>{{ t('info.feedback.text-7') }}</li>
+        <li>{{ t('info.feedback.text-8') }}</li>
+        <li>{{ t('info.feedback.text-9') }}</li>
+      </ul>
+      <p></p>
+      <p><b>{{ t('info.feedback.text-10') }}</b></p>
+      <ul>
+        <li>{{ t('info.feedback.text-11') }}</li>
+        <li>{{ t('info.feedback.text-12') }}</li>
+        <li>{{ t('info.feedback.text-13') }}</li>
+        <li>{{ t('info.feedback.text-14') }}</li>
+        <li>{{ t('info.feedback.text-15') }}</li>
+      </ul>
+      <p></p>
+      <p>{{ t('info.feedback.text-16') }}</p>
+      <p></p>
+      <p>{{ t('info.feedback.text-17') }}
+        <a href="https://pravo.by/document/?guid=3871&p0=H11100300">{{ t('info.feedback.text-18') }}</a>
+      </p>
+      <p></p>
+      <p><b>{{ t('info.feedback.text-19') }}</b>, {{ t('info.feedback.text-20') }}</p>
+      <ul>
+        <li>{{ t('info.feedback.text-21') }}</li>
+        <li>{{ t('info.feedback.text-22') }}</li>
+        <li>{{ t('info.feedback.text-23') }}</li>
+        <li>{{ t('info.feedback.text-24') }}</li>
+        <li>{{ t('info.feedback.text-25') }}</li>
+        <li>{{ t('info.feedback.text-26') }}</li>
+        <li>{{ t('info.feedback.text-27') }}</li>
+        <li>{{ t('info.feedback.text-28') }}</li>
+        <li>{{ t('info.feedback.text-29') }}</li>
+        <li>{{ t('info.feedback.text-30') }}</li>
+      </ul>
+    </div>
+
+    <div class="info-space"></div>
   </div>
 </body>

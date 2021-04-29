@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import sm from "./sendmessage.js";
+import smlp from "./sendmessage-lp.js";
+import { letProto } from 'rxjs-compat/operator/let';
 
 @Component({
   selector: 'app-info',
@@ -12,6 +14,7 @@ export class InfoComponent implements OnInit {
 
   ngOnInit() {
     sm();
+    smlp();
   }
   
   customOptions: OwlOptions = {
